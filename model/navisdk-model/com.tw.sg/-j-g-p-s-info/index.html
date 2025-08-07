@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>JGPSInfo</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    navisdk-model
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+0.0.1        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active=""
+                        data-filter=":navisdk:model:dokkaHtml/commonMain">common</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":navisdk:model:dokkaHtml/commonMain"
+                                       data-filter=":navisdk:model:dokkaHtml/commonMain"/>
+                                <span class="checkbox--icon"></span>
+                                common
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    navisdk-model
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="navisdk-model::com.tw.sg/JGPSInfo///PointingToDeclaration//-935789405">
+  <div class="breadcrumbs"><a href="../../../index.html">navisdk-model</a><span class="delimiter">/</span><a href="../index.html">com.tw.sg</a><span class="delimiter">/</span><span class="current">JGPSInfo</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>JGPSInfo</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">JGPSInfo</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>Status<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>Date_DD<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>Date_MM<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>Date_YY<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>UTC_HH<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>UTC_MM<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>UTC_SS<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>LatDir<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>LonDir<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>UsedSatNo<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>Course<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>Lon<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>Lat<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>Height<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>HDOP<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>nGpsQlty<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>nGpsStatus<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>SpeedK<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>bIsDR<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>bIsJump<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>GSASVCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>m_RedGreen3DSv<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>m_Pink3DSV<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>Dimension<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte/index.html">Byte</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>GPSCNResult<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>SEleResult<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="202341795%2FConstructors%2F-935789405" anchor-label="JGPSInfo" id="202341795%2FConstructors%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-j-g-p-s-info.html"><span><span>JGPSInfo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="202341795%2FConstructors%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">Status<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter ">Date_DD<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter ">Date_MM<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter ">Date_YY<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter ">UTC_HH<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter ">UTC_MM<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter ">UTC_SS<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter ">LatDir<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter ">LonDir<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter ">UsedSatNo<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'0'<span class="token punctuation">, </span></span><span class="parameter ">Course<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">Lon<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">Lat<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">Height<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">HDOP<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">nGpsQlty<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">nGpsStatus<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">SpeedK<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">bIsDR<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">bIsJump<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">GSASVCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">m_RedGreen3DSv<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">m_Pink3DSV<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">Dimension<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte/index.html">Byte</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">GPSCNResult<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">SEleResult<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-193962617%2FProperties%2F-935789405" anchor-label="bIsDR" id="-193962617%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="b-is-d-r.html"><span>b</span><wbr></wbr><span>Is</span><wbr></wbr><span><span>DR</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-193962617%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="b-is-d-r.html">bIsDR</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-868945977%2FProperties%2F-935789405" anchor-label="bIsJump" id="-868945977%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="b-is-jump.html"><span>b</span><wbr></wbr><span>Is</span><wbr></wbr><span><span>Jump</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-868945977%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="b-is-jump.html">bIsJump</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1780968734%2FProperties%2F-935789405" anchor-label="Course" id="1780968734%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-course.html"><span><span>Course</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1780968734%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-course.html">Course</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-148020080%2FProperties%2F-935789405" anchor-label="Date_DD" id="-148020080%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-date_-d-d.html"><span>Date_</span><wbr></wbr><span>DD</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-148020080%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-date_-d-d.html">Date_DD</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="195749744%2FProperties%2F-935789405" anchor-label="Date_MM" id="195749744%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-date_-m-m.html"><span>Date_</span><wbr></wbr><span>MM</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="195749744%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-date_-m-m.html">Date_MM</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-777546256%2FProperties%2F-935789405" anchor-label="Date_YY" id="-777546256%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-date_-y-y.html"><span>Date_</span><wbr></wbr><span>YY</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-777546256%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-date_-y-y.html">Date_YY</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1102293627%2FProperties%2F-935789405" anchor-label="Dimension" id="1102293627%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dimension.html"><span><span>Dimension</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1102293627%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-dimension.html">Dimension</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte/index.html">Byte</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1520040625%2FProperties%2F-935789405" anchor-label="GPSCNResult" id="-1520040625%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-g-p-s-c-n-result.html"><span><span>GPSCNResult</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1520040625%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-g-p-s-c-n-result.html">GPSCNResult</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1713420062%2FProperties%2F-935789405" anchor-label="GSASVCount" id="-1713420062%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-g-s-a-s-v-count.html"><span><span>GSASVCount</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1713420062%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-g-s-a-s-v-count.html">GSASVCount</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-723906884%2FProperties%2F-935789405" anchor-label="HDOP" id="-723906884%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-h-d-o-p.html"><span><span>HDOP</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-723906884%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-h-d-o-p.html">HDOP</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="679133586%2FProperties%2F-935789405" anchor-label="Height" id="679133586%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-height.html"><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="679133586%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-height.html">Height</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="405820258%2FProperties%2F-935789405" anchor-label="Lat" id="405820258%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-lat.html"><span><span>Lat</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="405820258%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-lat.html">Lat</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1998295509%2FProperties%2F-935789405" anchor-label="LatDir" id="-1998295509%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-lat-dir.html"><span>Lat</span><wbr></wbr><span><span>Dir</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1998295509%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-lat-dir.html">LatDir</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="797395766%2FProperties%2F-935789405" anchor-label="Lon" id="797395766%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-lon.html"><span><span>Lon</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="797395766%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-lon.html">Lon</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1703512617%2FProperties%2F-935789405" anchor-label="LonDir" id="-1703512617%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-lon-dir.html"><span>Lon</span><wbr></wbr><span><span>Dir</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1703512617%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-lon-dir.html">LonDir</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-698380355%2FProperties%2F-935789405" anchor-label="m_Pink3DSV" id="-698380355%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="m_-pink3-d-s-v.html"><span>m_</span><wbr></wbr><span>Pink3DSV</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-698380355%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="m_-pink3-d-s-v.html">m_Pink3DSV</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1565513567%2FProperties%2F-935789405" anchor-label="m_RedGreen3DSv" id="-1565513567%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="m_-red-green3-d-sv.html"><span>m_</span><wbr></wbr><span>Red</span><wbr></wbr><span><span>Green3DSv</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1565513567%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="m_-red-green3-d-sv.html">m_RedGreen3DSv</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-88297443%2FProperties%2F-935789405" anchor-label="nGpsQlty" id="-88297443%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="n-gps-qlty.html"><span>n</span><wbr></wbr><span>Gps</span><wbr></wbr><span><span>Qlty</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-88297443%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="n-gps-qlty.html">nGpsQlty</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-963909045%2FProperties%2F-935789405" anchor-label="nGpsStatus" id="-963909045%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="n-gps-status.html"><span>n</span><wbr></wbr><span>Gps</span><wbr></wbr><span><span>Status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-963909045%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="n-gps-status.html">nGpsStatus</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1059735375%2FProperties%2F-935789405" anchor-label="SEleResult" id="-1059735375%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-ele-result.html"><span>SEle</span><wbr></wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1059735375%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-s-ele-result.html">SEleResult</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1576175733%2FProperties%2F-935789405" anchor-label="SpeedK" id="1576175733%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-speed-k.html"><span>Speed</span><wbr></wbr><span><span>K</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1576175733%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-speed-k.html">SpeedK</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-268686041%2FProperties%2F-935789405" anchor-label="Status" id="-268686041%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-status.html"><span><span>Status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-268686041%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-status.html">Status</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-497053225%2FProperties%2F-935789405" anchor-label="UsedSatNo" id="-497053225%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-used-sat-no.html"><span>Used</span><wbr></wbr><span>Sat</span><wbr></wbr><span><span>No</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-497053225%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-used-sat-no.html">UsedSatNo</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="150273982%2FProperties%2F-935789405" anchor-label="UTC_HH" id="150273982%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-u-t-c_-h-h.html"><span>UTC_</span><wbr></wbr><span>HH</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="150273982%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-u-t-c_-h-h.html">UTC_HH</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="818475806%2FProperties%2F-935789405" anchor-label="UTC_MM" id="818475806%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-u-t-c_-m-m.html"><span>UTC_</span><wbr></wbr><span>MM</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="818475806%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-u-t-c_-m-m.html">UTC_MM</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1815655842%2FProperties%2F-935789405" anchor-label="UTC_SS" id="-1815655842%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-u-t-c_-s-s.html"><span>UTC_</span><wbr></wbr><span>SS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1815655842%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="-u-t-c_-s-s.html">UTC_SS</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1062559074%2FFunctions%2F-935789405" anchor-label="set" id="-1062559074%2FFunctions%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set.html"><span><span>set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1062559074%2FFunctions%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set.html"><span class="token function">set</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gpsInfoData<span class="token operator">: </span><a href="../../com.tw.mapmatch.dataset/-g-p-s-info-data/index.html">GPSInfoData</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

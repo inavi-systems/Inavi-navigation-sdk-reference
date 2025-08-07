@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ReqSQE</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    navisdk-model
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+0.0.1        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active=""
+                        data-filter=":navisdk:model:dokkaHtml/commonMain">common</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":navisdk:model:dokkaHtml/commonMain"
+                                       data-filter=":navisdk:model:dokkaHtml/commonMain"/>
+                                <span class="checkbox--icon"></span>
+                                common
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    navisdk-model
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="navisdk-model::com.inavisys.navisdk.model.network/ReqSQE///PointingToDeclaration//-935789405">
+  <div class="breadcrumbs"><a href="../../../index.html">navisdk-model</a><span class="delimiter">/</span><a href="../index.html">com.inavisys.navisdk.model.network</a><span class="delimiter">/</span><span class="current">ReqSQE</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Req</span><wbr></wbr><span><span>SQE</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">ReqSQE</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>depth<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>mode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;3&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>query<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>subString<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>autoSearchFlag<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>spopt<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>radius<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>admcode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>x1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>y1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>x2<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>y2<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>sortopt<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;4&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>favcatecode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>neighboropt<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>sortoilprice<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>sflag<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;N&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>searchType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;UNITED&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>cutflag<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;1&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>coordtype<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>startposition<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>reqcount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;30&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>evcstatus<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>m_arrEvcType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>sortevcprice<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span></span></span><span class="token punctuation">)</span> : <a href="../-req-base/index.html">ReqBase</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="2047344042%2FConstructors%2F-935789405" anchor-label="ReqSQE" id="2047344042%2FConstructors%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-req-s-q-e.html"><span>Req</span><wbr></wbr><span><span>SQE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2047344042%2FConstructors%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">depth<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">mode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;3&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">query<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">subString<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">autoSearchFlag<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">spopt<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">radius<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">admcode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">x1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">y1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">x2<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">y2<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">sortopt<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;4&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">favcatecode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">neighboropt<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">sortoilprice<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">sflag<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;N&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">searchType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;UNITED&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">cutflag<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;1&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">coordtype<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">startposition<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">reqcount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;30&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">evcstatus<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">m_arrEvcType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">sortevcprice<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;0&quot;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-703191127%2FProperties%2F-935789405" anchor-label="admcode" id="-703191127%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="admcode.html"><span><span>admcode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-703191127%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="admcode.html">admcode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="508676567%2FProperties%2F-935789405" anchor-label="autoSearchFlag" id="508676567%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="auto-search-flag.html"><span>auto</span><wbr></wbr><span>Search</span><wbr></wbr><span><span>Flag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="508676567%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="auto-search-flag.html">autoSearchFlag</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="422203345%2FProperties%2F-935789405" anchor-label="coordtype" id="422203345%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="coordtype.html"><span><span>coordtype</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="422203345%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="coordtype.html">coordtype</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1340125298%2FProperties%2F-935789405" anchor-label="cutflag" id="1340125298%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cutflag.html"><span><span>cutflag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1340125298%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="cutflag.html">cutflag</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-717450051%2FProperties%2F-935789405" anchor-label="depth" id="-717450051%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="depth.html"><span><span>depth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-717450051%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="depth.html">depth</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">하위 시설물 요구 depth 0 : depth 사용 안함(검색결과 모두 표출) (Default) 1 : 1 depth 만 요청(최상위 depth) 2 : 2 depth 까지 요청 3 : 3 depth 까지 요청</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="892683484%2FProperties%2F-935789405" anchor-label="evcstatus" id="892683484%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="evcstatus.html"><span><span>evcstatus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="892683484%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="evcstatus.html">evcstatus</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">0 : 전기차 충전소 충전 가능 여부 Filter Option 사용안함(default) 1 : 사용중 2 : 사용 가능 3 : 사용 불가</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1606614505%2FProperties%2F-935789405" anchor-label="favcatecode" id="1606614505%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="favcatecode.html"><span><span>favcatecode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1606614505%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="favcatecode.html">favcatecode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">선호카테고리 선호카테고리 분류 코드(대/중/소 입력 가능)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1013169405%2FProperties%2F-935789405" anchor-label="m_arrEvcType" id="1013169405%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="m_arr-evc-type.html"><span>m_</span><wbr></wbr><span>arrEvcType</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1013169405%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="m_arr-evc-type.html">m_arrEvcType</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">전기차 충전소 충전 타입 필터 리스트 0 : 전기차 충전소 충전 타입 여부 Filter Option 사용안함(default) 1 : DC차데모 2 : AC완속 3 : DC콤보 4 : AC급속3상</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1033767753%2FProperties%2F-935789405" anchor-label="mode" id="-1033767753%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mode.html"><span><span>mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1033767753%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="mode.html">mode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">검색 mode 1 : poi 검색 2 : adm 검색 3 : poi+adm 검색 (Default) 4 : poi+adm+tel+ucp 검색 5 : tel db 검색 6 : ucp 검색 7 : poi+tel+adm 검색 (poi, tel 검색결과 Universal 제공)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-120904577%2FProperties%2F-935789405" anchor-label="neighboropt" id="-120904577%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="neighboropt.html"><span><span>neighboropt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-120904577%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="neighboropt.html">neighboropt</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">R-SEARCH 에서 부터 사용 주변검색 결과표현 option 0 : Reference 정보 - 주변POI를 하위시설물 형태 depth로 표현(Default)     - 각 Reference 당 검색되는 POI의 개수는 최대 20개로 제한 1 : Reference정보+최상위 Reference의 검색결과 제공     - Reference정보는 queryParse 파트로 제공     - 검색결과는 poi 파트로 제공     - Reference검색 결과인 경우 queryParse부분과 count정보등만 제공함(여러 개의 Reference가 검색되는 경우 queryParse 파트의 첫번째 Reference에 대한 검색결과를 제공한다)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-959404456%2FProperties%2F-935789405" anchor-label="query" id="-959404456%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="query.html"><span><span>query</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-959404456%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="query.html">query</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-232963736%2FProperties%2F-935789405" anchor-label="radius" id="-232963736%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="radius.html"><span><span>radius</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-232963736%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="radius.html">radius</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2067449751%2FProperties%2F-935789405" anchor-label="reqcount" id="-2067449751%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reqcount.html"><span><span>reqcount</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2067449751%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="reqcount.html">reqcount</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1568942520%2FProperties%2F-935789405" anchor-label="reqType" id="-1568942520%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-req-base/req-type.html"><span>req</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1568942520%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-req-base/req-type.html">reqType</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1348628600%2FProperties%2F-935789405" anchor-label="searchType" id="1348628600%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="search-type.html"><span>search</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1348628600%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="search-type.html">searchType</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">통합검색/최근검색어/추천어재검색/위치주변통합검색 UNITED 통합검색 RECENT 최근검색어 SGST 추천어재검색 NEARBY 위치주변 통합검색</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="42522785%2FProperties%2F-935789405" anchor-label="sflag" id="42522785%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="sflag.html"><span><span>sflag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="42522785%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="sflag.html">sflag</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">음성검색 구분 flag V : 음성 T : 타이핑 L : 최근검색어 A : AI검색 N : 구분안됨</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1323203397%2FProperties%2F-935789405" anchor-label="sortevcprice" id="1323203397%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="sortevcprice.html"><span><span>sortevcprice</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1323203397%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="sortevcprice.html">sortevcprice</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">0: 전기차 충전소 가격순 정렬 Option 사용안함(default) 1: 가격순 정렬</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="185048901%2FProperties%2F-935789405" anchor-label="sortoilprice" id="185048901%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="sortoilprice.html"><span><span>sortoilprice</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="185048901%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="sortoilprice.html">sortoilprice</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">주유소 검색결과 유가순 정렬 option 0 : 유가순 정렬 Option 사용안함 (Default) 1 : 휘발유순 정렬 2 : 고급휘발유순 정렬 3 : 경유순 정렬 4 : LPG 가격순</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-592351573%2FProperties%2F-935789405" anchor-label="sortopt" id="-592351573%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="sortopt.html"><span><span>sortopt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-592351573%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="sortopt.html">sortopt</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">정렬 option 1 : 명칭순 정렬 2 : 거리순 정렬 (좌표를 입력한 경우) 3 : 이름매치 -> 거리순 정렬 (좌표를 입력한 경우) 4 : 검색어 Weight 정렬 (엔진기준) (Default) 5 : 검색어 Weight 정렬 + length (엔진기준) 6 : 선호카테고리 우선 정렬 7 : 최신데이터 순 정렬</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-438038614%2FProperties%2F-935789405" anchor-label="spopt" id="-438038614%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="spopt.html"><span><span>spopt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-438038614%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="spopt.html">spopt</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">공간검색 option 0 : 공간검색 사용 안함 (Default) 1 : Extent 검색 2 : Range 검색 3 : K-NN 검색 (x1, y1만 사용함) – 추후 지원 예정</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1565957643%2FProperties%2F-935789405" anchor-label="startposition" id="-1565957643%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="startposition.html"><span><span>startposition</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1565957643%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="startposition.html">startposition</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1480819889%2FProperties%2F-935789405" anchor-label="subString" id="-1480819889%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="sub-string.html"><span>sub</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1480819889%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="sub-string.html">subString</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">자동완성어 사용시에 사용자가 입력한 부분 (ex : '주'를 입력한 이후 '주유소' 선택시, '주'가 subString) 자동 완성어/추천어 재검색시에만 사용됨 추천어 재검색시에는 검색 실패한 검색어가 subString이 됨 AI연동시에는 uword(AI엔진이 인식한 단어)가 subString이됨</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2100563873%2FProperties%2F-935789405" anchor-label="x1" id="2100563873%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="x1.html"><span><span>x1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2100563873%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="x1.html">x1</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">X좌표spopt가 0인 경우 기준점 X좌표spopt가 1인 경우 Extent의 좌상단 X좌표spopt가 2,3인 경우 기준점 X좌표 ※ Range검색 및 K-NN의 경우 반드시 필요</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2131583680%2FProperties%2F-935789405" anchor-label="x2" id="2131583680%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="x2.html"><span><span>x2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2131583680%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="x2.html">x2</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">X좌표 spopt가 1인 경우 Extent의 우하단 X좌표 spopt가 2,3인 경우 사용 안함</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1232789406%2FProperties%2F-935789405" anchor-label="y1" id="-1232789406%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="y1.html"><span><span>y1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1232789406%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="y1.html">y1</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Y좌표 spopt가 0인 경우 기준점 Y좌표 spopt가 1인 경우 Extent의 좌상단 Y좌표 spopt가 2,3인 경우 기준점 Y좌표 ※ Range검색 및 K-NN의 경우 반드시 필요</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1201769599%2FProperties%2F-935789405" anchor-label="y2" id="-1201769599%2FProperties%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="y2.html"><span><span>y2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1201769599%2FProperties%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="y2.html">y2</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Y 좌표 spopt가 1인 경우 Extent의 우하단 Y좌표 spopt가 2,3인 경우 사용 안함</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1270059266%2FFunctions%2F-935789405" anchor-label="makeSample" id="1270059266%2FFunctions%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="make-sample.html"><span>make</span><wbr></wbr><span><span>Sample</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1270059266%2FFunctions%2F-935789405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:model:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="make-sample.html"><span class="token function">makeSample</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ReqSQE</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

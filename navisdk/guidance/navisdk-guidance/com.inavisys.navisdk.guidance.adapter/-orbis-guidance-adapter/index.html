@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>OrbisGuidanceAdapter</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    navisdk-guidance
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+0.0.1        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active=""
+                        data-filter=":navisdk:guidance:dokkaHtml/commonMain">common</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":navisdk:guidance:dokkaHtml/commonMain"
+                                       data-filter=":navisdk:guidance:dokkaHtml/commonMain"/>
+                                <span class="checkbox--icon"></span>
+                                common
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    navisdk-guidance
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="navisdk-guidance::com.inavisys.navisdk.guidance.adapter/OrbisGuidanceAdapter///PointingToDeclaration//1421220016">
+  <div class="breadcrumbs"><a href="../../../index.html">navisdk-guidance</a><span class="delimiter">/</span><a href="../index.html">com.inavisys.navisdk.guidance.adapter</a><span class="delimiter">/</span><span class="current">OrbisGuidanceAdapter</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Orbis</span><wbr></wbr><span>Guidance</span><wbr></wbr><span><span>Adapter</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">OrbisGuidanceAdapter</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">positionManager<span class="token operator">: </span><span data-unresolved-link="com.inavisys.navisdk.mapmatch.location/PositionManager///PointingToDeclaration/">PositionManager</span><span class="token punctuation">, </span></span><span class="parameter ">orbisRoute<span class="token operator">: </span><span data-unresolved-link="com.inavisys.navisdk.orbisroute/OrbisRouteIF///PointingToDeclaration/">OrbisRouteIF</span><span class="token punctuation">, </span></span><span class="parameter ">fileManager<span class="token operator">: </span><span data-unresolved-link="com.inavisys.navisdk.utils/FileManager///PointingToDeclaration/">FileManager</span><span class="token punctuation">, </span></span><span class="parameter ">orbisMapMatcher<span class="token operator">: </span><span data-unresolved-link="com.inavisys.navisdk.mapmatch/OrbisMapMatcher///PointingToDeclaration/">OrbisMapMatcher</span><span class="token punctuation">, </span></span><span class="parameter ">orbisTTSUseCase<span class="token operator">: </span><a href="../../com.inavisys.navisdk.guidance.usecase/-orbis-t-t-s-use-case/index.html">OrbisTTSUseCase</a><span class="token punctuation">, </span></span><span class="parameter ">deviceInfo<span class="token operator">: </span><span data-unresolved-link="com.inavisys.navisdk.utils/DeviceInfo///PointingToDeclaration/">DeviceInfo</span></span></span><span class="token punctuation">)</span> : <a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.adapter/-adapter/index.html">Adapter</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1213822494%2FConstructors%2F1421220016" anchor-label="OrbisGuidanceAdapter" id="-1213822494%2FConstructors%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-orbis-guidance-adapter.html"><span>Orbis</span><wbr></wbr><span>Guidance</span><wbr></wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1213822494%2FConstructors%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">positionManager<span class="token operator">: </span><span data-unresolved-link="com.inavisys.navisdk.mapmatch.location/PositionManager///PointingToDeclaration/">PositionManager</span><span class="token punctuation">, </span></span><span class="parameter ">orbisRoute<span class="token operator">: </span><span data-unresolved-link="com.inavisys.navisdk.orbisroute/OrbisRouteIF///PointingToDeclaration/">OrbisRouteIF</span><span class="token punctuation">, </span></span><span class="parameter ">fileManager<span class="token operator">: </span><span data-unresolved-link="com.inavisys.navisdk.utils/FileManager///PointingToDeclaration/">FileManager</span><span class="token punctuation">, </span></span><span class="parameter ">orbisMapMatcher<span class="token operator">: </span><span data-unresolved-link="com.inavisys.navisdk.mapmatch/OrbisMapMatcher///PointingToDeclaration/">OrbisMapMatcher</span><span class="token punctuation">, </span></span><span class="parameter ">orbisTTSUseCase<span class="token operator">: </span><a href="../../com.inavisys.navisdk.guidance.usecase/-orbis-t-t-s-use-case/index.html">OrbisTTSUseCase</a><span class="token punctuation">, </span></span><span class="parameter ">deviceInfo<span class="token operator">: </span><span data-unresolved-link="com.inavisys.navisdk.utils/DeviceInfo///PointingToDeclaration/">DeviceInfo</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-106943437%2FProperties%2F1421220016" anchor-label="guidanceData" id="-106943437%2FProperties%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="guidance-data.html"><span>guidance</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-106943437%2FProperties%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="guidance-data.html">guidanceData</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="../../com.inavisys.navisdk.guidance.model/-orbis-guidance-data/index.html">OrbisGuidanceData</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="318678024%2FFunctions%2F1421220016" anchor-label="bearing" id="318678024%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bearing.html"><span><span>bearing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="318678024%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="bearing.html"><span class="token function">bearing</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">point1<span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.location/-coordinate/index.html">Coordinate</a><span class="token punctuation">, </span></span><span class="parameter ">point2<span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.location/-coordinate/index.html">Coordinate</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1510704837%2FFunctions%2F1421220016" anchor-label="calculateTimeInSeconds" id="-1510704837%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="calculate-time-in-seconds.html"><span>calculate</span><wbr></wbr><span>Time</span><wbr></wbr><span>In</span><wbr></wbr><span><span>Seconds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1510704837%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="calculate-time-in-seconds.html"><span class="token function">calculateTimeInSeconds</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">distanceMeter<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">speedKmPerHour<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-673143201%2FFunctions%2F1421220016" anchor-label="degreesToRadians" id="-673143201%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="degrees-to-radians.html"><span>degrees</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Radians</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-673143201%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="degrees-to-radians.html"><span class="token function">degreesToRadians</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">degrees<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1864622725%2FFunctions%2F1421220016" anchor-label="getCameraInfo" id="1864622725%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../get-camera-info.html"><span>get</span><wbr></wbr><span>Camera</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1864622725%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">OrbisGuidanceAdapter</a><span class="token punctuation">.</span><a href="../get-camera-info.html"><span class="token function">getCameraInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">currentLinkInfo<span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.route/-link-info/index.html">LinkInfo</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">currentLinkRemainDistance<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.inavisys.navisdk.guidance.model/-orbis-camera-info/index.html">OrbisCameraInfo</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1329642994%2FFunctions%2F1421220016" anchor-label="getCameraPointInfo" id="1329642994%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-camera-point-info.html"><span>get</span><wbr></wbr><span>Camera</span><wbr></wbr><span>Point</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1329642994%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-camera-point-info.html"><span class="token function">getCameraPointInfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../com.inavisys.navisdk.guidance.model/-orbis-camera-info/index.html">OrbisCameraInfo</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-153051262%2FFunctions%2F1421220016" anchor-label="getETAInfo" id="-153051262%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../get-e-t-a-info.html"><span>get</span><wbr></wbr><span><span>ETAInfo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-153051262%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">OrbisGuidanceAdapter</a><span class="token punctuation">.</span><a href="../get-e-t-a-info.html"><span class="token function">getETAInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">currentLinkInfo<span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.route/-link-info/index.html">LinkInfo</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">currentRemainDistance<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">r_ratio<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">streetName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.inavisys.navisdk.guidance.model/-orbis-guidance-data/-eta-data/index.html">OrbisGuidanceData.EtaData</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1755853164%2FFunctions%2F1421220016" anchor-label="getGuideRouteInfo" id="-1755853164%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-guide-route-info.html"><span>get</span><wbr></wbr><span>Guide</span><wbr></wbr><span>Route</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1755853164%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-guide-route-info.html"><span class="token function">getGuideRouteInfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.route/-orbis-route-info/index.html">OrbisRouteInfo</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-379832853%2FFunctions%2F1421220016" anchor-label="getLinkDistance" id="-379832853%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../get-link-distance.html"><span>get</span><wbr></wbr><span>Link</span><wbr></wbr><span><span>Distance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-379832853%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">OrbisGuidanceAdapter</a><span class="token punctuation">.</span><a href="../get-link-distance.html"><span class="token function">getLinkDistance</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sIdx<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">eIdx<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-233739110%2FFunctions%2F1421220016" anchor-label="getLinkRoadName" id="-233739110%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-link-road-name.html"><span>get</span><wbr></wbr><span>Link</span><wbr></wbr><span>Road</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-233739110%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-link-road-name.html"><span class="token function">getLinkRoadName</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">linkInfo<span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.route/-link-info/index.html">LinkInfo</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="480842179%2FFunctions%2F1421220016" anchor-label="getLinkTime" id="480842179%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../get-link-time.html"><span>get</span><wbr></wbr><span>Link</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="480842179%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">OrbisGuidanceAdapter</a><span class="token punctuation">.</span><a href="../get-link-time.html"><span class="token function">getLinkTime</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sIdx<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">eIdx<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="384270497%2FFunctions%2F1421220016" anchor-label="getOrbisRouteInfo" id="384270497%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-orbis-route-info.html"><span>get</span><wbr></wbr><span>Orbis</span><wbr></wbr><span>Route</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="384270497%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-orbis-route-info.html"><span class="token function">getOrbisRouteInfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.route/-orbis-route-info/index.html">OrbisRouteInfo</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-65424972%2FFunctions%2F1421220016" anchor-label="getSearchItem" id="-65424972%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-search-item.html"><span>get</span><wbr></wbr><span>Search</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-65424972%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-search-item.html"><span class="token function">getSearchItem</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.location/-location-info/-search-item/index.html">LocationInfo.SearchItem</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="547951149%2FFunctions%2F1421220016" anchor-label="getTurnInfo" id="547951149%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../get-turn-info.html"><span>get</span><wbr></wbr><span>Turn</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="547951149%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">OrbisGuidanceAdapter</a><span class="token punctuation">.</span><a href="../get-turn-info.html"><span class="token function">getTurnInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">currentLinkInfo<span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.route/-link-info/index.html">LinkInfo</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">currentLinkRemainDistance<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="../../com.inavisys.navisdk.guidance.model/-orbis-turn-info/index.html">OrbisTurnInfo</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../com.inavisys.navisdk.guidance.model/-orbis-turn-info/index.html">OrbisTurnInfo</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="262602954%2FFunctions%2F1421220016" anchor-label="getTurnPointInfo" id="262602954%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-turn-point-info.html"><span>get</span><wbr></wbr><span>Turn</span><wbr></wbr><span>Point</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="262602954%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-turn-point-info.html"><span class="token function">getTurnPointInfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../com.inavisys.navisdk.guidance.model/-orbis-turn-info/index.html">OrbisTurnInfo</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1063904560%2FFunctions%2F1421220016" anchor-label="guidanceClear" id="1063904560%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="guidance-clear.html"><span>guidance</span><wbr></wbr><span><span>Clear</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1063904560%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="guidance-clear.html"><span class="token function">guidanceClear</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="975953214%2FFunctions%2F1421220016" anchor-label="GuidanceData" id="975953214%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-guidance-data.html"><span>Guidance</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="975953214%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.route/-orbis-route-info/index.html">OrbisRouteInfo</a><span class="token punctuation">.</span><a href="-guidance-data.html"><span class="token function">GuidanceData</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.route/-orbis-route-info/index.html">OrbisRouteInfo</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="878387301%2FFunctions%2F1421220016" anchor-label="initOrbisRoute" id="878387301%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="init-orbis-route.html"><span>init</span><wbr></wbr><span>Orbis</span><wbr></wbr><span><span>Route</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="878387301%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="init-orbis-route.html"><span class="token function">initOrbisRoute</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="441863547%2FFunctions%2F1421220016" anchor-label="makeSafetyPoints" id="441863547%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="make-safety-points.html"><span>make</span><wbr></wbr><span>Safety</span><wbr></wbr><span><span>Points</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="441863547%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="make-safety-points.html"><span class="token function">makeSafetyPoints</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">orbisRouteInfo<span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.route/-orbis-route-info/index.html">OrbisRouteInfo</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-696078143%2FFunctions%2F1421220016" anchor-label="moveBackward" id="-696078143%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="move-backward.html"><span>move</span><wbr></wbr><span><span>Backward</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-696078143%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="move-backward.html"><span class="token function">moveBackward</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="690667999%2FFunctions%2F1421220016" anchor-label="moveFoward" id="690667999%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="move-foward.html"><span>move</span><wbr></wbr><span><span>Foward</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="690667999%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="move-foward.html"><span class="token function">moveFoward</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1877804504%2FFunctions%2F1421220016" anchor-label="moveOrbisSimulStep" id="1877804504%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="move-orbis-simul-step.html"><span>move</span><wbr></wbr><span>Orbis</span><wbr></wbr><span>Simul</span><wbr></wbr><span><span>Step</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1877804504%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="move-orbis-simul-step.html"><span class="token function">moveOrbisSimulStep</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bIsFoward<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1778383249%2FFunctions%2F1421220016" anchor-label="onClear" id="1778383249%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1778383249%2FFunctions%2F1421220016"><span>on</span><wbr></wbr><span><span>Clear</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1778383249%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html#1778383249%2FFunctions%2F1421220016"><span class="token function">onClear</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="132523177%2FFunctions%2F1421220016" anchor-label="radiansToDegrees" id="132523177%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="radians-to-degrees.html"><span>radians</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Degrees</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="132523177%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="radians-to-degrees.html"><span class="token function">radiansToDegrees</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">radians<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="433032395%2FFunctions%2F1421220016" anchor-label="runGuidance" id="433032395%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="run-guidance.html"><span>run</span><wbr></wbr><span><span>Guidance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="433032395%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="run-guidance.html"><span class="token function">runGuidance</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">orbisRouteInfo<span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.route/-orbis-route-info/index.html">OrbisRouteInfo</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1890761952%2FFunctions%2F1421220016" anchor-label="setMobileCameraData" id="1890761952%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-mobile-camera-data.html"><span>set</span><wbr></wbr><span>Mobile</span><wbr></wbr><span>Camera</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1890761952%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-mobile-camera-data.html"><span class="token function">setMobileCameraData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">resSafetyCamera<span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.network.camera/-res-safety-camera/index.html">ResSafetyCamera</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="464238441%2FFunctions%2F1421220016" anchor-label="setRouteData" id="464238441%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-route-data.html"><span>set</span><wbr></wbr><span>Route</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="464238441%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-route-data.html"><span class="token function">setRouteData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">orbisRouteInfo<span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.route/-orbis-route-info/index.html">OrbisRouteInfo</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1197947531%2FFunctions%2F1421220016" anchor-label="setSearchItemData" id="-1197947531%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-search-item-data.html"><span>set</span><wbr></wbr><span>Search</span><wbr></wbr><span>Item</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1197947531%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-search-item-data.html"><span class="token function">setSearchItemData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">item<span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.location/-location-info/-search-item/index.html">LocationInfo.SearchItem</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="996781571%2FFunctions%2F1421220016" anchor-label="startSimulationTest" id="996781571%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="start-simulation-test.html"><span>start</span><wbr></wbr><span>Simulation</span><wbr></wbr><span><span>Test</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="996781571%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="start-simulation-test.html"><span class="token function">startSimulationTest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">currentRouteInfo<span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.inavisys.navisdk.model.route/-orbis-route-info/index.html">OrbisRouteInfo</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="698744716%2FFunctions%2F1421220016" anchor-label="stopSimulation" id="698744716%2FFunctions%2F1421220016" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:guidance:dokkaHtml/commonMain" data-filterable-set=":navisdk:guidance:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop-simulation.html"><span>stop</span><wbr></wbr><span><span>Simulation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="698744716%2FFunctions%2F1421220016"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:guidance:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="stop-simulation.html"><span class="token function">stopSimulation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

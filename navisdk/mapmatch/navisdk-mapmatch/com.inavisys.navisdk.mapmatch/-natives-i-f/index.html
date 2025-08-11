@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>NativesIF</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    navisdk-mapmatch
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+0.0.1        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active=""
+                        data-filter=":navisdk:mapmatch:dokkaHtml/commonMain">common</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":navisdk:mapmatch:dokkaHtml/commonMain"
+                                       data-filter=":navisdk:mapmatch:dokkaHtml/commonMain"/>
+                                <span class="checkbox--icon"></span>
+                                common
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    navisdk-mapmatch
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="navisdk-mapmatch::com.inavisys.navisdk.mapmatch/NativesIF///PointingToDeclaration//1525687425">
+  <div class="breadcrumbs"><a href="../../../index.html">navisdk-mapmatch</a><span class="delimiter">/</span><a href="../index.html">com.inavisys.navisdk.mapmatch</a><span class="delimiter">/</span><span class="current">NativesIF</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Natives</span><wbr></wbr><span><span>IF</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">NativesIF</a></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="com.inavisys.navisdk.mapmatch/AndroidNativesAdapter///PointingToDeclaration/">AndroidNativesAdapter</span></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="com.inavisys.navisdk.mapmatch/IOSNativesAdapter///PointingToDeclaration/">IOSNativesAdapter</span></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1879378777%2FFunctions%2F1525687425" anchor-label="getLogCountDown" id="1879378777%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-log-count-down.html"><span>get</span><wbr></wbr><span>Log</span><wbr></wbr><span>Count</span><wbr></wbr><span><span>Down</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1879378777%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="get-log-count-down.html"><span class="token function">getLogCountDown</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1226395811%2FFunctions%2F1525687425" anchor-label="nativeChangeLink" id="-1226395811%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-change-link.html"><span>native</span><wbr></wbr><span>Change</span><wbr></wbr><span><span>Link</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1226395811%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-change-link.html"><span class="token function">nativeChangeLink</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1453526897%2FFunctions%2F1525687425" anchor-label="nativeClearRouteTbl" id="1453526897%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-clear-route-tbl.html"><span>native</span><wbr></wbr><span>Clear</span><wbr></wbr><span>Route</span><wbr></wbr><span><span>Tbl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1453526897%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-clear-route-tbl.html"><span class="token function">nativeClearRouteTbl</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="639505002%2FFunctions%2F1525687425" anchor-label="nativeDebugLog" id="639505002%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-debug-log.html"><span>native</span><wbr></wbr><span>Debug</span><wbr></wbr><span><span>Log</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="639505002%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-debug-log.html"><span class="token function">nativeDebugLog</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">logMsg<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="277699586%2FFunctions%2F1525687425" anchor-label="nativeGetDebugLog" id="277699586%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-debug-log.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span>Debug</span><wbr></wbr><span><span>Log</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="277699586%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-debug-log.html"><span class="token function">nativeGetDebugLog</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buffer<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">size<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="530676939%2FFunctions%2F1525687425" anchor-label="nativeGetDebugLogSize" id="530676939%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-debug-log-size.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span>Debug</span><wbr></wbr><span>Log</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="530676939%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-debug-log-size.html"><span class="token function">nativeGetDebugLogSize</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1165506075%2FFunctions%2F1525687425" anchor-label="nativeGetGPSInfo" id="-1165506075%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-g-p-s-info.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span><span>GPSInfo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1165506075%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-g-p-s-info.html"><span class="token function">nativeGetGPSInfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.tw.mapmatch.dataset/_-g-p-s-info/index.html">_GPSInfo</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-114197539%2FFunctions%2F1525687425" anchor-label="nativeGetGPSUpdateTime" id="-114197539%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-g-p-s-update-time.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span>GPSUpdate</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-114197539%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-g-p-s-update-time.html"><span class="token function">nativeGetGPSUpdateTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1303479488%2FFunctions%2F1525687425" anchor-label="nativeGetIsEscapeLinkNowFlag" id="-1303479488%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-is-escape-link-now-flag.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span>Is</span><wbr></wbr><span>Escape</span><wbr></wbr><span>Link</span><wbr></wbr><span>Now</span><wbr></wbr><span><span>Flag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1303479488%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-is-escape-link-now-flag.html"><span class="token function">nativeGetIsEscapeLinkNowFlag</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="442527746%2FFunctions%2F1525687425" anchor-label="nativeGetLinkCollection" id="442527746%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-link-collection.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span>Link</span><wbr></wbr><span><span>Collection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="442527746%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-link-collection.html"><span class="token function">nativeGetLinkCollection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buffer<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="541990668%2FFunctions%2F1525687425" anchor-label="nativeGetLogCollection" id="541990668%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-log-collection.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span>Log</span><wbr></wbr><span><span>Collection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="541990668%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-log-collection.html"><span class="token function">nativeGetLogCollection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buffer<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-850327666%2FFunctions%2F1525687425" anchor-label="nativeGetMapmatchVersion" id="-850327666%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-mapmatch-version.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span>Mapmatch</span><wbr></wbr><span><span>Version</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-850327666%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-mapmatch-version.html"><span class="token function">nativeGetMapmatchVersion</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1574685076%2FFunctions%2F1525687425" anchor-label="nativeGetMMCInfo" id="-1574685076%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-m-m-c-info.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span><span>MMCInfo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1574685076%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-m-m-c-info.html"><span class="token function">nativeGetMMCInfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.tw.mapmatch.dataset/_-m-m-c-info/index.html">_MMCInfo</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1976696950%2FFunctions%2F1525687425" anchor-label="nativeGetNmeaLog" id="-1976696950%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-nmea-log.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span>Nmea</span><wbr></wbr><span><span>Log</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1976696950%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-nmea-log.html"><span class="token function">nativeGetNmeaLog</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buffer<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">size<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1084606381%2FFunctions%2F1525687425" anchor-label="nativeGetNmeaLogSize" id="-1084606381%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-nmea-log-size.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span>Nmea</span><wbr></wbr><span>Log</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1084606381%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-nmea-log-size.html"><span class="token function">nativeGetNmeaLogSize</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-472664023%2FFunctions%2F1525687425" anchor-label="nativeGetSATInfo" id="-472664023%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-s-a-t-info.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span><span>SATInfo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-472664023%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-s-a-t-info.html"><span class="token function">nativeGetSATInfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.tw.mapmatch.dataset/_-s-a-t-info/index.html">_SATInfo</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="180860695%2FFunctions%2F1525687425" anchor-label="nativeGetSATInfoArray" id="180860695%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-s-a-t-info-array.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span>SATInfo</span><wbr></wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="180860695%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-s-a-t-info-array.html"><span class="token function">nativeGetSATInfoArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-315248755%2FFunctions%2F1525687425" anchor-label="nativeGetSensorAction" id="-315248755%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-sensor-action.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span>Sensor</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-315248755%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-sensor-action.html"><span class="token function">nativeGetSensorAction</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1048194411%2FFunctions%2F1525687425" anchor-label="nativeGetSimulatePause" id="1048194411%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-simulate-pause.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span>Simulate</span><wbr></wbr><span><span>Pause</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1048194411%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-simulate-pause.html"><span class="token function">nativeGetSimulatePause</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="398004173%2FFunctions%2F1525687425" anchor-label="nativeGetSimulatePos" id="398004173%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-simulate-pos.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span>Simulate</span><wbr></wbr><span><span>Pos</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="398004173%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-simulate-pos.html"><span class="token function">nativeGetSimulatePos</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-194175396%2FFunctions%2F1525687425" anchor-label="nativeGetUseSensor" id="-194175396%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-get-use-sensor.html"><span>native</span><wbr></wbr><span>Get</span><wbr></wbr><span>Use</span><wbr></wbr><span><span>Sensor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-194175396%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-get-use-sensor.html"><span class="token function">nativeGetUseSensor</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1656742214%2FFunctions%2F1525687425" anchor-label="nativeInitMap" id="1656742214%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-init-map.html"><span>native</span><wbr></wbr><span>Init</span><wbr></wbr><span><span>Map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1656742214%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-init-map.html"><span class="token function">nativeInitMap</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1842731514%2FFunctions%2F1525687425" anchor-label="nativeMapMatch" id="1842731514%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-map-match.html"><span>native</span><wbr></wbr><span>Map</span><wbr></wbr><span><span>Match</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1842731514%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-map-match.html"><span class="token function">nativeMapMatch</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bVirtual<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">nType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1078439896%2FFunctions%2F1525687425" anchor-label="nativeSetBackground" id="-1078439896%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-background.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span><span>Background</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1078439896%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-background.html"><span class="token function">nativeSetBackground</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bBackGround<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1592730311%2FFunctions%2F1525687425" anchor-label="nativeSetConfigureMMC" id="-1592730311%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-configure-m-m-c.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Configure</span><wbr></wbr><span><span>MMC</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1592730311%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-configure-m-m-c.html"><span class="token function">nativeSetConfigureMMC</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bIsCar<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">bIsWalk<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">bIsSensor<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-943630263%2FFunctions%2F1525687425" anchor-label="nativeSetCRoadSkipMode" id="-943630263%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-c-road-skip-mode.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>CRoad</span><wbr></wbr><span>Skip</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-943630263%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-c-road-skip-mode.html"><span class="token function">nativeSetCRoadSkipMode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bCRSkipMode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-183979144%2FFunctions%2F1525687425" anchor-label="nativeSetDRMString" id="-183979144%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-d-r-m-string.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span><span>DRMString</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-183979144%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-d-r-m-string.html"><span class="token function">nativeSetDRMString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">drm<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2137784959%2FFunctions%2F1525687425" anchor-label="nativeSetGuideCode" id="2137784959%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-guide-code.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Guide</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2137784959%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-guide-code.html"><span class="token function">nativeSetGuideCode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nGuideCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">nDistTurnPnt<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-702203759%2FFunctions%2F1525687425" anchor-label="nativeSetIsEscapeLinkNowFlag" id="-702203759%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-is-escape-link-now-flag.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Is</span><wbr></wbr><span>Escape</span><wbr></wbr><span>Link</span><wbr></wbr><span>Now</span><wbr></wbr><span><span>Flag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-702203759%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-is-escape-link-now-flag.html"><span class="token function">nativeSetIsEscapeLinkNowFlag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bEscape<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-908553227%2FFunctions%2F1525687425" anchor-label="nativeSetLastDpCoordinate" id="-908553227%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-last-dp-coordinate.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Last</span><wbr></wbr><span>Dp</span><wbr></wbr><span><span>Coordinate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-908553227%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-last-dp-coordinate.html"><span class="token function">nativeSetLastDpCoordinate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nX<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">nY<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">nCarAngle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1176239428%2FFunctions%2F1525687425" anchor-label="nativeSetLastPosSavedInZone" id="-1176239428%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-last-pos-saved-in-zone.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Last</span><wbr></wbr><span>Pos</span><wbr></wbr><span>Saved</span><wbr></wbr><span>In</span><wbr></wbr><span><span>Zone</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1176239428%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-last-pos-saved-in-zone.html"><span class="token function">nativeSetLastPosSavedInZone</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bSaved<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1126668226%2FFunctions%2F1525687425" anchor-label="nativeSetLogFileName" id="1126668226%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-log-file-name.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Log</span><wbr></wbr><span>File</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1126668226%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-log-file-name.html"><span class="token function">nativeSetLogFileName</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">fileName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="565483730%2FFunctions%2F1525687425" anchor-label="nativeSetMapmatchCheckDevice" id="565483730%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-mapmatch-check-device.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Mapmatch</span><wbr></wbr><span>Check</span><wbr></wbr><span><span>Device</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="565483730%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-mapmatch-check-device.html"><span class="token function">nativeSetMapmatchCheckDevice</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">deviceGrade<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2088882827%2FFunctions%2F1525687425" anchor-label="nativeSetMapmatchLocationMode" id="-2088882827%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-mapmatch-location-mode.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Mapmatch</span><wbr></wbr><span>Location</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2088882827%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-mapmatch-location-mode.html"><span class="token function">nativeSetMapmatchLocationMode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-804569316%2FFunctions%2F1525687425" anchor-label="nativeSetNetworkCoordinate" id="-804569316%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-network-coordinate.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Network</span><wbr></wbr><span><span>Coordinate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-804569316%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-network-coordinate.html"><span class="token function">nativeSetNetworkCoordinate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lon<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">lat<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2009528227%2FFunctions%2F1525687425" anchor-label="nativeSetNetworkCoordinateByBessel" id="-2009528227%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-network-coordinate-by-bessel.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Network</span><wbr></wbr><span>Coordinate</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Bessel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2009528227%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-network-coordinate-by-bessel.html"><span class="token function">nativeSetNetworkCoordinateByBessel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">lon<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">lat<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">angle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a><span class="token punctuation">, </span></span><span class="parameter ">accuracy<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">time<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="997612466%2FFunctions%2F1525687425" anchor-label="nativeSetNMEAData" id="997612466%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-n-m-e-a-data.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span><span>NMEAData</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="997612466%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-n-m-e-a-data.html"><span class="token function">nativeSetNMEAData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">src<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">dwCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1517266206%2FFunctions%2F1525687425" anchor-label="nativeSetRouteTable" id="-1517266206%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-route-table.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Route</span><wbr></wbr><span><span>Table</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1517266206%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-route-table.html"><span class="token function">nativeSetRouteTable</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">route_buf<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">length<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="137463101%2FFunctions%2F1525687425" anchor-label="nativeSetRouteTableInDirect" id="137463101%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-route-table-in-direct.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Route</span><wbr></wbr><span>Table</span><wbr></wbr><span>In</span><wbr></wbr><span><span>Direct</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="137463101%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-route-table-in-direct.html"><span class="token function">nativeSetRouteTableInDirect</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fileName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="449565868%2FFunctions%2F1525687425" anchor-label="nativeSetSensorData" id="449565868%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-sensor-data.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Sensor</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="449565868%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-sensor-data.html"><span class="token function">nativeSetSensorData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">rawData<span class="token operator">: </span><a href="https://inavi-systems.github.io/Inavi-navigation-sdk-reference/navisdk/model/navisdk-model/com.tw.mapmatch.dataset/_-sensor-raw-data/index.html">_SensorRawData</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-647780924%2FFunctions%2F1525687425" anchor-label="nativeSetSimulateIndex" id="-647780924%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-simulate-index.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Simulate</span><wbr></wbr><span><span>Index</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-647780924%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-simulate-index.html"><span class="token function">nativeSetSimulateIndex</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">dist<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="356301948%2FFunctions%2F1525687425" anchor-label="nativeSetSimulatePause" id="356301948%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-simulate-pause.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Simulate</span><wbr></wbr><span><span>Pause</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="356301948%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-simulate-pause.html"><span class="token function">nativeSetSimulatePause</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bPause<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="337451857%2FFunctions%2F1525687425" anchor-label="nativeSetSimulatePercentage" id="337451857%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-simulate-percentage.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Simulate</span><wbr></wbr><span><span>Percentage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="337451857%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-simulate-percentage.html"><span class="token function">nativeSetSimulatePercentage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nPercentage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-542202569%2FFunctions%2F1525687425" anchor-label="nativeSetSimulatePos" id="-542202569%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-simulate-pos.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Simulate</span><wbr></wbr><span><span>Pos</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-542202569%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-simulate-pos.html"><span class="token function">nativeSetSimulatePos</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nPos<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1987690084%2FFunctions%2F1525687425" anchor-label="nativeSetSimulateSpeed" id="1987690084%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-simulate-speed.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Simulate</span><wbr></wbr><span><span>Speed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1987690084%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-simulate-speed.html"><span class="token function">nativeSetSimulateSpeed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nSpeed<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2082461906%2FFunctions%2F1525687425" anchor-label="nativeSetSimulateStartStop" id="-2082461906%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-simulate-start-stop.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Simulate</span><wbr></wbr><span>Start</span><wbr></wbr><span><span>Stop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2082461906%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-simulate-start-stop.html"><span class="token function">nativeSetSimulateStartStop</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bStart<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-343761566%2FFunctions%2F1525687425" anchor-label="nativeSetUseSensorStatus" id="-343761566%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-set-use-sensor-status.html"><span>native</span><wbr></wbr><span>Set</span><wbr></wbr><span>Use</span><wbr></wbr><span>Sensor</span><wbr></wbr><span><span>Status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-343761566%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-set-use-sensor-status.html"><span class="token function">nativeSetUseSensorStatus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">use<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">sensiblity<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1106113308%2FFunctions%2F1525687425" anchor-label="nativeStartGravity" id="-1106113308%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-start-gravity.html"><span>native</span><wbr></wbr><span>Start</span><wbr></wbr><span><span>Gravity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1106113308%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-start-gravity.html"><span class="token function">nativeStartGravity</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">fileName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2024954471%2FFunctions%2F1525687425" anchor-label="nativeStopGravity" id="2024954471%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-stop-gravity.html"><span>native</span><wbr></wbr><span>Stop</span><wbr></wbr><span><span>Gravity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2024954471%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-stop-gravity.html"><span class="token function">nativeStopGravity</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="35169910%2FFunctions%2F1525687425" anchor-label="nativeStopLogging" id="35169910%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="native-stop-logging.html"><span>native</span><wbr></wbr><span>Stop</span><wbr></wbr><span><span>Logging</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="35169910%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="native-stop-logging.html"><span class="token function">nativeStopLogging</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1920674075%2FFunctions%2F1525687425" anchor-label="setDoingReRoute" id="1920674075%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-doing-re-route.html"><span>set</span><wbr></wbr><span>Doing</span><wbr></wbr><span>Re</span><wbr></wbr><span><span>Route</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1920674075%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="set-doing-re-route.html"><span class="token function">setDoingReRoute</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="501987080%2FFunctions%2F1525687425" anchor-label="setDoingRoute" id="501987080%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-doing-route.html"><span>set</span><wbr></wbr><span>Doing</span><wbr></wbr><span><span>Route</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="501987080%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="set-doing-route.html"><span class="token function">setDoingRoute</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2056497715%2FFunctions%2F1525687425" anchor-label="setLogCountDown" id="-2056497715%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-log-count-down.html"><span>set</span><wbr></wbr><span>Log</span><wbr></wbr><span>Count</span><wbr></wbr><span><span>Down</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2056497715%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="set-log-count-down.html"><span class="token function">setLogCountDown</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1234361576%2FFunctions%2F1525687425" anchor-label="setMMCSite" id="1234361576%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-m-m-c-site.html"><span>set</span><wbr></wbr><span><span>MMCSite</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1234361576%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="set-m-m-c-site.html"><span class="token function">setMMCSite</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">siteName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">siteType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">posX<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">posY<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="265248044%2FFunctions%2F1525687425" anchor-label="startLiveLogging" id="265248044%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="start-live-logging.html"><span>start</span><wbr></wbr><span>Live</span><wbr></wbr><span><span>Logging</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="265248044%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="start-live-logging.html"><span class="token function">startLiveLogging</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pathName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1925660834%2FFunctions%2F1525687425" anchor-label="startMapmatch_oniOS" id="1925660834%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="start-mapmatch_oni-o-s.html"><span>start</span><wbr></wbr><span>Mapmatch_</span><wbr></wbr><span>oniOS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1925660834%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="start-mapmatch_oni-o-s.html"><span class="token function">startMapmatch_oniOS</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1613386494%2FFunctions%2F1525687425" anchor-label="startUpdate_oniOS" id="-1613386494%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="start-update_oni-o-s.html"><span>start</span><wbr></wbr><span>Update_</span><wbr></wbr><span>oniOS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1613386494%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="start-update_oni-o-s.html"><span class="token function">startUpdate_oniOS</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2112876149%2FFunctions%2F1525687425" anchor-label="stopLiveLogging" id="-2112876149%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop-live-logging.html"><span>stop</span><wbr></wbr><span>Live</span><wbr></wbr><span><span>Logging</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2112876149%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="stop-live-logging.html"><span class="token function">stopLiveLogging</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1697822692%2FFunctions%2F1525687425" anchor-label="stopMapmatch_oniOS" id="1697822692%2FFunctions%2F1525687425" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:mapmatch:dokkaHtml/commonMain" data-filterable-set=":navisdk:mapmatch:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop-mapmatch_oni-o-s.html"><span>stop</span><wbr></wbr><span>Mapmatch_</span><wbr></wbr><span>oniOS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1697822692%2FFunctions%2F1525687425"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:mapmatch:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="stop-mapmatch_oni-o-s.html"><span class="token function">stopMapmatch_oniOS</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

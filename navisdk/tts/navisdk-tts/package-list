@@ -1,0 +1,28 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.inavisys.navisdk.tts////PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/index.html
+$dokka.location:com.inavisys.navisdk.tts//getTTSService/#/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/get-t-t-s-service.html
+$dokka.location:com.inavisys.navisdk.tts/AndroidTTSService///PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-android-t-t-s-service/index.html
+$dokka.location:com.inavisys.navisdk.tts/AndroidTTSService/AndroidTTSService/#/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-android-t-t-s-service/-android-t-t-s-service.html
+$dokka.location:com.inavisys.navisdk.tts/AndroidTTSService/audioManager/#/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-android-t-t-s-service/audio-manager.html
+$dokka.location:com.inavisys.navisdk.tts/AndroidTTSService/focusRequest/#/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-android-t-t-s-service/focus-request.html
+$dokka.location:com.inavisys.navisdk.tts/AndroidTTSService/initialize/#kotlin.Any?/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-android-t-t-s-service/initialize.html
+$dokka.location:com.inavisys.navisdk.tts/AndroidTTSService/speak/#kotlin.collections.List[com.inavisys.navisdk.model.tts.TTSText]/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-android-t-t-s-service/speak.html
+$dokka.location:com.inavisys.navisdk.tts/AndroidTTSService/speakWithQueue/#kotlin.String/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-android-t-t-s-service/speak-with-queue.html
+$dokka.location:com.inavisys.navisdk.tts/AndroidTTSService/stopSpeaking/#/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-android-t-t-s-service/stop-speaking.html
+$dokka.location:com.inavisys.navisdk.tts/AndroidTTSService/ttsQueue/#/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-android-t-t-s-service/tts-queue.html
+$dokka.location:com.inavisys.navisdk.tts/IOSTTSService///PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-i-o-s-t-t-s-service/index.html
+$dokka.location:com.inavisys.navisdk.tts/IOSTTSService/IOSTTSService/#/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-i-o-s-t-t-s-service/-i-o-s-t-t-s-service.html
+$dokka.location:com.inavisys.navisdk.tts/IOSTTSService/initialize/#kotlin.Any?/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-i-o-s-t-t-s-service/initialize.html
+$dokka.location:com.inavisys.navisdk.tts/IOSTTSService/speak/#kotlin.collections.List[com.inavisys.navisdk.model.tts.TTSText]/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-i-o-s-t-t-s-service/speak.html
+$dokka.location:com.inavisys.navisdk.tts/IOSTTSService/stopSpeaking/#/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-i-o-s-t-t-s-service/stop-speaking.html
+$dokka.location:com.inavisys.navisdk.tts/TTSConstant///PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-t-t-s-constant/index.html
+$dokka.location:com.inavisys.navisdk.tts/TTSConstant/GOOGLE_TTS_PACKAGE/#/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-t-t-s-constant/-g-o-o-g-l-e_-t-t-s_-p-a-c-k-a-g-e.html
+$dokka.location:com.inavisys.navisdk.tts/TTSConstant/SAMSUMG_TTS_PACKAGE/#/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-t-t-s-constant/-s-a-m-s-u-m-g_-t-t-s_-p-a-c-k-a-g-e.html
+$dokka.location:com.inavisys.navisdk.tts/TTSConstant/TAG/#/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-t-t-s-constant/-t-a-g.html
+$dokka.location:com.inavisys.navisdk.tts/TTSService///PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-t-t-s-service/index.html
+$dokka.location:com.inavisys.navisdk.tts/TTSService/initialize/#kotlin.Any?/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-t-t-s-service/initialize.html
+$dokka.location:com.inavisys.navisdk.tts/TTSService/speak/#kotlin.collections.List[com.inavisys.navisdk.model.tts.TTSText]/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-t-t-s-service/speak.html
+$dokka.location:com.inavisys.navisdk.tts/TTSService/speakWithQueue/#kotlin.String/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-t-t-s-service/speak-with-queue.html
+$dokka.location:com.inavisys.navisdk.tts/TTSService/stopSpeaking/#/PointingToDeclaration/navisdk-tts/com.inavisys.navisdk.tts/-t-t-s-service/stop-speaking.html
+com.inavisys.navisdk.tts

@@ -1,0 +1,101 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter///PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/index.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/CalcTurnAngle/#kotlin.Long#kotlin.Long/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-calc-turn-angle.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/CleanOrbisNetwork/#/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-clean-orbis-network.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetDataLink/#kotlin.Long/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-data-link.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetDataLinkID/#kotlin.LongArray?/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-data-link-i-d.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetDataLinkNearPt/#kotlin.Double#kotlin.Double#kotlin.DoubleArray?/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-data-link-near-pt.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetDataLinkRect/#com.inavi.orbisroute.Rect_m?/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-data-link-rect.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetDataNode/#kotlin.Long/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-data-node.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetDataNodeID/#kotlin.LongArray?/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-data-node-i-d.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetDataNodeNearPt/#kotlin.Double#kotlin.Double#kotlin.DoubleArray?/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-data-node-near-pt.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetDataNodeRect/#com.inavi.orbisroute.Rect_m?/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-data-node-rect.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetExtentLink/#/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-extent-link.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetExtentNode/#/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-extent-node.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetListTurnInfoFrom/#kotlin.Long/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-list-turn-info-from.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetListTurnInfoTo/#kotlin.Long/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-list-turn-info-to.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetMapVersion/#/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-map-version.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetRoadNameByLinkIndex/#kotlin.Long/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-road-name-by-link-index.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetRoadNameByNameID/#kotlin.Int/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-road-name-by-name-i-d.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/OpenOrbisNetwork/#kotlin.String?/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-open-orbis-network.html
+$dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/isTurnInfo/#kotlin.Long#kotlin.Long/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/is-turn-info.html
+module:core
+com.inavisys.navibank
+com.inavisys.navisdk.core
+com.inavisys.navisdk.core.common
+com.inavisys.navisdk.core.config.platform
+com.inavisys.navisdk.core.config.usecase
+com.inavisys.navisdk.core.engine.admin
+com.inavisys.navisdk.core.engine.dp
+com.inavisys.navisdk.core.engine.navibank
+com.inavisys.navisdk.core.engine.smr
+com.inavisys.navisdk.core.manager.route
+com.inavisys.navisdk.core.manager.route.listener
+com.inavisys.navisdk.core.manager.route.service
+com.inavisys.navisdk.core.network
+com.inavisys.navisdk.core.network.api
+com.inavisys.navisdk.core.network.repository
+com.inavisys.navisdk.core.network.usecase.auth
+com.inavisys.navisdk.core.network.usecase.guide
+com.inavisys.navisdk.core.network.usecase.map
+com.inavisys.navisdk.core.network.usecase.route
+com.inavisys.navisdk.core.network.usecase.search
+com.inavisys.navisdk.core.network.usecase.service
+com.inavisys.navisdk.core.network.utils
+com.inavisys.navisdk.core.store
+com.inavisys.navisdk.core.viewmodel
+com.tw.admin
+com.tw.smr
+module:guidance
+com.inavisys.navisdk.guidance
+com.inavisys.navisdk.guidance.adapter
+com.inavisys.navisdk.guidance.model
+com.inavisys.navisdk.guidance.usecase
+com.tw.sg
+module:mapmatch
+com.inavisys.navisdk.mapmatch
+com.inavisys.navisdk.mapmatch.location
+com.tw.mapmatch.jni
+module:maps
+com.inavi.maps
+module:model
+com.inavi.orbisroute
+com.inavisys.navibank
+com.inavisys.navisdk.model.adapter
+com.inavisys.navisdk.model.common
+com.inavisys.navisdk.model.engine.map
+com.inavisys.navisdk.model.engine.mapmatch
+com.inavisys.navisdk.model.engine.sg
+com.inavisys.navisdk.model.guide
+com.inavisys.navisdk.model.location
+com.inavisys.navisdk.model.network
+com.inavisys.navisdk.model.network.auth
+com.inavisys.navisdk.model.network.camera
+com.inavisys.navisdk.model.network.common
+com.inavisys.navisdk.model.network.map
+com.inavisys.navisdk.model.network.route
+com.inavisys.navisdk.model.network.search
+com.inavisys.navisdk.model.network.service
+com.inavisys.navisdk.model.route
+com.inavisys.navisdk.model.store
+com.inavisys.navisdk.model.tts
+com.inavisys.navisdk.model.ui
+com.tw.mapmatch.dataset
+com.tw.sg
+com.tw.smr
+module:orbisroute
+com.inavi.orbisroute
+com.inavisys.navisdk.orbisroute
+module:tts
+com.inavisys.navisdk.tts
+module:utils
+com.inavisys.navisdk.utils
+com.inavisys.navisdk.utils.database
+module:maps:inavi
+com.inavi.maps.inavi
+module:maps:orbis
+com.inavi.maps.orbis
+com.inavi.maps.orbis.controller
+com.inavi.maps.orbis.display
+com.inavi.maps.orbis.display.camera

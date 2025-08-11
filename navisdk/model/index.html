@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>navisdk-model</title>
-    <link href="images/logo-icon.svg" rel="icon" type="image/svg">
-    <script>var pathToRoot = "";</script>
+    <title>model</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../";</script>
     <script>document.documentElement.classList.replace("no-js","js");</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
     if (storage == null) {
@@ -19,46 +18,36 @@
         }
     }
     </script>
-<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
-<script type="text/javascript" src="scripts/sourceset_dependencies.js" async="async"></script>
-<link href="styles/style.css" rel="Stylesheet">
-<link href="styles/main.css" rel="Stylesheet">
-<link href="styles/prism.css" rel="Stylesheet">
-<link href="styles/logo-styles.css" rel="Stylesheet">
-<link href="styles/font-jb-sans-auto.css" rel="Stylesheet">
-<link href="ui-kit/ui-kit.min.css" rel="Stylesheet">
-<script type="text/javascript" src="scripts/clipboard.js" async="async"></script>
-<script type="text/javascript" src="scripts/navigation-loader.js" async="async"></script>
-<script type="text/javascript" src="scripts/platform-content-handler.js" async="async"></script>
-<script type="text/javascript" src="scripts/main.js" defer="defer"></script>
-<script type="text/javascript" src="scripts/prism.js" async="async"></script>
-<script type="text/javascript" src="ui-kit/ui-kit.min.js" defer="defer"></script>
-<script type="text/javascript" src="scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
-</head>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
 <body>
     <div class="root">
     <nav class="navigation theme-dark" id="navigation-wrapper">
-            <a class="library-name--link" href="index.html">
-                    navisdk-model
-            </a>
-        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
-                type="button">Toggle table of contents
+<a class="library-name--link" href="../../index.html">
+                    INAVI Navigation SDK Documents
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">
-0.0.1        </div>
+        <div class="library-version" id="library-version">0.0.1
+        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
-                <button class="platform-tag platform-selector common-like" data-active=""
-                        data-filter=":navisdk:model:dokkaHtml/commonMain">common</button>
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":navisdk:model:dokkaHtmlPartial/commonMain">common</button>
             <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
-                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
-                        data-role="dropdown-toggle"
-                        aria-controls="platform-tags-listbox"
-                        aria-haspopup="listbox"
-                        aria-expanded="false"
-                        aria-label="Toggle source sets"
-                ></button>
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
                 <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
                     <div class="dropdown--header"><span>Platform filter</span>
                         <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
@@ -67,8 +56,7 @@
                     </div>
                         <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
                             <label class="checkbox">
-                                <input type="checkbox" class="checkbox--input" id=":navisdk:model:dokkaHtml/commonMain"
-                                       data-filter=":navisdk:model:dokkaHtml/commonMain"/>
+                                <input type="checkbox" class="checkbox--input" id=":navisdk:model:dokkaHtmlPartial/commonMain" data-filter=":navisdk:model:dokkaHtmlPartial/commonMain">
                                 <span class="checkbox--icon"></span>
                                 common
                             </label>
@@ -77,8 +65,7 @@
                 <div class="dropdown--overlay"></div>
             </div>
         </div>
-            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
-                    type="button">Switch theme
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
             </button>
             <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
                 API
@@ -88,11 +75,10 @@
         <div id="container">
             <div class="sidebar" id="leftColumn">
                 <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
-                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
-                        data-role="dropdown-listbox">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
                         <div class="dropdown--header">
                             <span>
-                                    navisdk-model
+                                    INAVI Navigation SDK Documents
                             </span>
                             <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
                                 <i class="ui-kit-icon ui-kit-icon_cross"></i>
@@ -104,19 +90,19 @@
                 </div>
             </div>
             <div id="main">
-<div class="main-content" id="content" pageIds="navisdk-model::////PointingToDeclaration//-935789405">
+<div class="main-content" id="content" pageids="model::////PointingToDeclaration//-46001278">
   <div class="breadcrumbs"></div>
   <div class="cover ">
-    <h1 class="cover"><span><span>navisdk-model</span></span></h1>
+    <h1 class="cover"><span><span>model</span></span></h1>
   </div>
   <h2 class="">Packages</h2>
-  <div class="table"><a data-name="-1403787762%2FPackages%2F-935789405" anchor-label="com.inavi.orbisroute" id="-1403787762%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+  <div class="table"><a data-name="-1403787762%2FPackages%2F-46001278" anchor-label="com.inavi.orbisroute" id="-1403787762%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavi.orbisroute/index.html">com.inavi.orbisroute</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1403787762%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavi.orbisroute/index.html">com.inavi.orbisroute</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1403787762%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -128,13 +114,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="-1342297241%2FPackages%2F-935789405" anchor-label="com.inavisys.navibank" id="-1342297241%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="-1342297241%2FPackages%2F-46001278" anchor-label="com.inavisys.navibank" id="-1342297241%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navibank/index.html">com.inavisys.navibank</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1342297241%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navibank/index.html">com.inavisys.navibank</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1342297241%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -146,13 +132,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="-75802737%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.adapter" id="-75802737%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="-75802737%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.adapter" id="-75802737%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.adapter/index.html">com.inavisys.navisdk.model.adapter</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-75802737%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.adapter/index.html">com.inavisys.navisdk.model.adapter</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-75802737%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -164,13 +150,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="825472815%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.common" id="825472815%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="825472815%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.common" id="825472815%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.common/index.html">com.inavisys.navisdk.model.common</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="825472815%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.common/index.html">com.inavisys.navisdk.model.common</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="825472815%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -182,13 +168,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="-762255436%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.engine.map" id="-762255436%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="-762255436%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.engine.map" id="-762255436%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.engine.map/index.html">com.inavisys.navisdk.model.engine.map</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-762255436%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.engine.map/index.html">com.inavisys.navisdk.model.engine.map</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-762255436%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -200,13 +186,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="569195221%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.engine.mapmatch" id="569195221%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="569195221%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.engine.mapmatch" id="569195221%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.engine.mapmatch/index.html">com.inavisys.navisdk.model.engine.mapmatch</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="569195221%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.engine.mapmatch/index.html">com.inavisys.navisdk.model.engine.mapmatch</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="569195221%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -218,13 +204,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="-84256000%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.engine.sg" id="-84256000%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="-84256000%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.engine.sg" id="-84256000%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.engine.sg/index.html">com.inavisys.navisdk.model.engine.sg</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-84256000%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.engine.sg/index.html">com.inavisys.navisdk.model.engine.sg</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-84256000%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -236,13 +222,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="740552828%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.guide" id="740552828%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="740552828%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.guide" id="740552828%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.guide/index.html">com.inavisys.navisdk.model.guide</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="740552828%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.guide/index.html">com.inavisys.navisdk.model.guide</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="740552828%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -254,13 +240,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="-1098996743%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.location" id="-1098996743%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="-1098996743%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.location" id="-1098996743%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.location/index.html">com.inavisys.navisdk.model.location</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1098996743%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.location/index.html">com.inavisys.navisdk.model.location</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1098996743%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -272,13 +258,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="1417029038%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.network" id="1417029038%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="1417029038%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.network" id="1417029038%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.network/index.html">com.inavisys.navisdk.model.network</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1417029038%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.network/index.html">com.inavisys.navisdk.model.network</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1417029038%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -290,13 +276,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="-884358420%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.network.auth" id="-884358420%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="-884358420%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.network.auth" id="-884358420%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.network.auth/index.html">com.inavisys.navisdk.model.network.auth</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-884358420%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.network.auth/index.html">com.inavisys.navisdk.model.network.auth</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-884358420%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -308,13 +294,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="-201554519%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.network.camera" id="-201554519%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="-201554519%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.network.camera" id="-201554519%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.network.camera/index.html">com.inavisys.navisdk.model.network.camera</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-201554519%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.network.camera/index.html">com.inavisys.navisdk.model.network.camera</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-201554519%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -326,13 +312,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="2044813551%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.network.common" id="2044813551%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="2044813551%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.network.common" id="2044813551%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.network.common/index.html">com.inavisys.navisdk.model.network.common</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2044813551%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.network.common/index.html">com.inavisys.navisdk.model.network.common</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2044813551%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -344,13 +330,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="-1027530596%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.network.map" id="-1027530596%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="-1027530596%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.network.map" id="-1027530596%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.network.map/index.html">com.inavisys.navisdk.model.network.map</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1027530596%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.network.map/index.html">com.inavisys.navisdk.model.network.map</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1027530596%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -362,13 +348,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="83742665%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.network.route" id="83742665%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="83742665%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.network.route" id="83742665%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.network.route/index.html">com.inavisys.navisdk.model.network.route</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="83742665%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.network.route/index.html">com.inavisys.navisdk.model.network.route</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="83742665%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -380,13 +366,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="1351760492%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.network.search" id="1351760492%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="1351760492%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.network.search" id="1351760492%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.network.search/index.html">com.inavisys.navisdk.model.network.search</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1351760492%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.network.search/index.html">com.inavisys.navisdk.model.network.search</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1351760492%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -398,13 +384,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="3208629%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.network.service" id="3208629%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="3208629%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.network.service" id="3208629%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.network.service/index.html">com.inavisys.navisdk.model.network.service</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="3208629%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.network.service/index.html">com.inavisys.navisdk.model.network.service</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="3208629%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -416,13 +402,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="182956425%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.route" id="182956425%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="182956425%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.route" id="182956425%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.route/index.html">com.inavisys.navisdk.model.route</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="182956425%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.route/index.html">com.inavisys.navisdk.model.route</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="182956425%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -434,13 +420,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="1236167201%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.store" id="1236167201%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="1236167201%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.store" id="1236167201%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.store/index.html">com.inavisys.navisdk.model.store</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1236167201%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.store/index.html">com.inavisys.navisdk.model.store</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1236167201%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -452,13 +438,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="903770163%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.tts" id="903770163%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="903770163%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.tts" id="903770163%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.tts/index.html">com.inavisys.navisdk.model.tts</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="903770163%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.tts/index.html">com.inavisys.navisdk.model.tts</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="903770163%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -470,13 +456,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="1705446296%2FPackages%2F-935789405" anchor-label="com.inavisys.navisdk.model.ui" id="1705446296%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="1705446296%2FPackages%2F-46001278" anchor-label="com.inavisys.navisdk.model.ui" id="1705446296%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.inavisys.navisdk.model.ui/index.html">com.inavisys.navisdk.model.ui</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1705446296%2FPackages%2F-935789405"></span>
+              <div><a href="com.inavisys.navisdk.model.ui/index.html">com.inavisys.navisdk.model.ui</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1705446296%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -488,13 +474,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="1246123827%2FPackages%2F-935789405" anchor-label="com.tw.mapmatch.dataset" id="1246123827%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="1246123827%2FPackages%2F-46001278" anchor-label="com.tw.mapmatch.dataset" id="1246123827%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.tw.mapmatch.dataset/index.html">com.tw.mapmatch.dataset</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1246123827%2FPackages%2F-935789405"></span>
+              <div><a href="com.tw.mapmatch.dataset/index.html">com.tw.mapmatch.dataset</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1246123827%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -506,13 +492,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="1351414100%2FPackages%2F-935789405" anchor-label="com.tw.sg" id="1351414100%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="1351414100%2FPackages%2F-46001278" anchor-label="com.tw.sg" id="1351414100%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.tw.sg/index.html">com.tw.sg</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1351414100%2FPackages%2F-935789405"></span>
+              <div><a href="com.tw.sg/index.html">com.tw.sg</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1351414100%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">
@@ -524,13 +510,13 @@
         <div></div>
       </div>
     </div>
-<a data-name="-476122916%2FPackages%2F-935789405" anchor-label="com.tw.smr" id="-476122916%2FPackages%2F-935789405" data-filterable-set=":navisdk:model:dokkaHtml/commonMain"></a>
-    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtml/commonMain" data-filterable-set=":navisdk:model:dokkaHtml/commonMain">
+<a data-name="-476122916%2FPackages%2F-46001278" anchor-label="com.tw.smr" id="-476122916%2FPackages%2F-46001278" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":navisdk:model:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:model:dokkaHtmlPartial/commonMain">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="navisdk-model/com.tw.smr/index.html">com.tw.smr</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-476122916%2FPackages%2F-935789405"></span>
+              <div><a href="com.tw.smr/index.html">com.tw.smr</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-476122916%2FPackages%2F-46001278"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div class="pull-right">

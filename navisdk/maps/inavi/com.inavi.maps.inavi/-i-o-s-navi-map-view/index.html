@@ -1,0 +1,1391 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>IOSNaviMapView</title>
+<link href="../../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../../../../index.html">
+                    INAVI Navigation SDK Documents
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">0.0.1
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filter=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+                                <span class="checkbox--icon"></span>
+                                ios
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    INAVI Navigation SDK Documents
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="maps:inavi::com.inavi.maps.inavi/IOSNaviMapView///PointingToDeclaration//1601889449">
+  <div class="breadcrumbs"><a href="../../index.html">maps:inavi</a><span class="delimiter">/</span><a href="../index.html">com.inavi.maps.inavi</a><span class="delimiter">/</span><span class="current">IOSNaviMapView</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>IOSNavi</span><wbr><span>Map</span><wbr><span><span>View</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">IOSNaviMapView</a> : <a href="../../../../../navisdk/maps/com.inavi.maps/-map-i-f/index.html">MapIF</a>, <span data-unresolved-link="org.koin.core.component/KoinComponent///PointingToDeclaration/">KoinComponent</span></div></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1068689113%2FConstructors%2F1601889449" anchor-label="IOSNaviMapView" id="1068689113%2FConstructors%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-o-s-navi-map-view.html"><span>IOSNavi</span><wbr><span>Map</span><wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1068689113%2FConstructors%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1172601697%2FProperties%2F1601889449" anchor-label="bInit" id="1172601697%2FProperties%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="b-init.html"><span>b</span><wbr><span><span>Init</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1172601697%2FProperties%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="b-init.html">bInit</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1020569796%2FFunctions%2F1601889449" anchor-label="addMapOverlay" id="1020569796%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-map-overlay.html"><span>add</span><wbr><span>Map</span><wbr><span><span>Overlay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1020569796%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="add-map-overlay.html"><span class="token function">addMapOverlay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1076786476%2FFunctions%2F1601889449" anchor-label="addMarker" id="-1076786476%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-marker.html"><span>add</span><wbr><span><span>Marker</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1076786476%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="add-marker.html"><span class="token function">addMarker</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mapMarkerOptions<span class="token operator">: </span><a href="../../../../../navisdk/model/com.inavisys.navisdk.model.engine.map/-map-marker-options/index.html">MapMarkerOptions</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="395501566%2FFunctions%2F1601889449" anchor-label="addResource" id="395501566%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-resource.html"><span>add</span><wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="395501566%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="add-resource.html"><span class="token function">addResource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">var2<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span></span><span class="parameter ">var3<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">var4<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="794586732%2FFunctions%2F1601889449" anchor-label="addRouteLine" id="794586732%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-route-line.html"><span>add</span><wbr><span>Route</span><wbr><span><span>Line</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="794586732%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="add-route-line.html"><span class="token function">addRouteLine</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">routeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">inaviBuffer<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">mapRouteOptions<span class="token operator">: </span><a href="../../../../../navisdk/model/com.inavisys.navisdk.model.engine.map/-map-route-options/index.html">MapRouteOptions</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-route-line.html"><span class="token function">addRouteLine</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">routeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">inaviBuffer<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">orbisRouteList<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1077210618%2FFunctions%2F1601889449" anchor-label="carGroup" id="1077210618%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="car-group.html"><span>car</span><wbr><span><span>Group</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1077210618%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="car-group.html"><span class="token function">carGroup</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-740016274%2FFunctions%2F1601889449" anchor-label="carType" id="-740016274%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="car-type.html"><span>car</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-740016274%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="car-type.html"><span class="token function">carType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="../../../../../navisdk/maps/com.inavi.maps/-location-marker-type/index.html">LocationMarkerType</a><span class="token punctuation">, </span></span><span class="parameter ">orbisInitCoordinate<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="979408609%2FFunctions%2F1601889449" anchor-label="clearMapElements" id="979408609%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="clear-map-elements.html"><span>clear</span><wbr><span>Map</span><wbr><span><span>Elements</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="979408609%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="clear-map-elements.html"><span class="token function">clearMapElements</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-982882425%2FFunctions%2F1601889449" anchor-label="dpVersion" id="-982882425%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dp-version.html"><span>dp</span><wbr><span><span>Version</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-982882425%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="dp-version.html"><span class="token function">dpVersion</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="420791371%2FFunctions%2F1601889449" anchor-label="getErrCode" id="420791371%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-err-code.html"><span>get</span><wbr><span>Err</span><wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="420791371%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-err-code.html"><span class="token function">getErrCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="894441567%2FFunctions%2F1601889449" anchor-label="getKoin" id="894441567%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#894441567%2FFunctions%2F1601889449"><span>get</span><wbr><span><span>Koin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="894441567%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#894441567%2FFunctions%2F1601889449"><span class="token function">getKoin</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.koin.core/Koin///PointingToDeclaration/">Koin</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-570735284%2FFunctions%2F1601889449" anchor-label="getMapCenter" id="-570735284%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-map-center.html"><span>get</span><wbr><span>Map</span><wbr><span><span>Center</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-570735284%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-map-center.html"><span class="token function">getMapCenter</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../../navisdk/model/com.inavisys.navisdk.model.location/-my-point-d/index.html">MyPointD</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1800099829%2FFunctions%2F1601889449" anchor-label="getMapLevel" id="1800099829%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-map-level.html"><span>get</span><wbr><span>Map</span><wbr><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1800099829%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-map-level.html"><span class="token function">getMapLevel</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1156108652%2FFunctions%2F1601889449" anchor-label="getMapOverlayInstance" id="-1156108652%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-map-overlay-instance.html"><span>get</span><wbr><span>Map</span><wbr><span>Overlay</span><wbr><span><span>Instance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1156108652%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-map-overlay-instance.html"><span class="token function">getMapOverlayInstance</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1133981188%2FFunctions%2F1601889449" anchor-label="getMapView" id="-1133981188%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-map-view.html"><span>get</span><wbr><span>Map</span><wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1133981188%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-map-view.html"><span class="token function">getMapView</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1510536993%2FFunctions%2F1601889449" anchor-label="init_last_dp" id="1510536993%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="init_last_dp.html"><span>init_</span><wbr><span>last_</span><wbr><span>dp</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1510536993%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="init_last_dp.html"><span class="token function">init_last_dp</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-888531083%2FFunctions%2F1601889449" anchor-label="initLayout" id="-888531083%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="init-layout.html"><span>init</span><wbr><span><span>Layout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-888531083%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="init-layout.html"><span class="token function">initLayout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activity<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-689663718%2FFunctions%2F1601889449" anchor-label="initLocationSetting" id="-689663718%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="init-location-setting.html"><span>init</span><wbr><span>Location</span><wbr><span><span>Setting</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-689663718%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="init-location-setting.html"><span class="token function">initLocationSetting</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activity<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="507887761%2FFunctions%2F1601889449" anchor-label="lineTo" id="507887761%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="line-to.html"><span>line</span><wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="507887761%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="line-to.html"><span class="token function">lineTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">var3<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-698158694%2FFunctions%2F1601889449" anchor-label="lineVisible" id="-698158694%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="line-visible.html"><span>line</span><wbr><span><span>Visible</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-698158694%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="line-visible.html"><span class="token function">lineVisible</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="450181169%2FFunctions%2F1601889449" anchor-label="mapCenterAlign" id="450181169%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="map-center-align.html"><span>map</span><wbr><span>Center</span><wbr><span><span>Align</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="450181169%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="map-center-align.html"><span class="token function">mapCenterAlign</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1284120153%2FFunctions%2F1601889449" anchor-label="mapDataReLoad" id="1284120153%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="map-data-re-load.html"><span>map</span><wbr><span>Data</span><wbr><span>Re</span><wbr><span><span>Load</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1284120153%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="map-data-re-load.html"><span class="token function">mapDataReLoad</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2074425751%2FFunctions%2F1601889449" anchor-label="move_auto" id="-2074425751%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="move_auto.html"><span>move_</span><wbr><span>auto</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2074425751%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="move_auto.html"><span class="token function">move_auto</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">var2<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-305391204%2FFunctions%2F1601889449" anchor-label="multitouch_auto" id="-305391204%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="multitouch_auto.html"><span>multitouch_</span><wbr><span>auto</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-305391204%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="multitouch_auto.html"><span class="token function">multitouch_auto</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2129037493%2FFunctions%2F1601889449" anchor-label="removeAllMarkers" id="-2129037493%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-all-markers.html"><span>remove</span><wbr><span>All</span><wbr><span><span>Markers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2129037493%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="remove-all-markers.html"><span class="token function">removeAllMarkers</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-240485465%2FFunctions%2F1601889449" anchor-label="removeAllRouteLine" id="-240485465%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-all-route-line.html"><span>remove</span><wbr><span>All</span><wbr><span>Route</span><wbr><span><span>Line</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-240485465%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="remove-all-route-line.html"><span class="token function">removeAllRouteLine</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1108985491%2FFunctions%2F1601889449" anchor-label="removeMapOverlay" id="1108985491%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-map-overlay.html"><span>remove</span><wbr><span>Map</span><wbr><span><span>Overlay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1108985491%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="remove-map-overlay.html"><span class="token function">removeMapOverlay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1942386501%2FFunctions%2F1601889449" anchor-label="removeMarker" id="-1942386501%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-marker.html"><span>remove</span><wbr><span><span>Marker</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1942386501%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="remove-marker.html"><span class="token function">removeMarker</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">markerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1013742733%2FFunctions%2F1601889449" anchor-label="removeResource" id="-1013742733%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-resource.html"><span>remove</span><wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1013742733%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="remove-resource.html"><span class="token function">removeResource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="930957803%2FFunctions%2F1601889449" anchor-label="resetRoute" id="930957803%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reset-route.html"><span>reset</span><wbr><span><span>Route</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="930957803%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="reset-route.html"><span class="token function">resetRoute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1916062238%2FFunctions%2F1601889449" anchor-label="screen2dp" id="1916062238%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="screen2dp.html"><span><span>screen2dp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1916062238%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="screen2dp.html"><span class="token function">screen2dp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">var2<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../../navisdk/model/com.inavisys.navisdk.model.location/-my-point-d/index.html">MyPointD</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="617645616%2FFunctions%2F1601889449" anchor-label="selectRouteLine" id="617645616%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="select-route-line.html"><span>select</span><wbr><span>Route</span><wbr><span><span>Line</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="617645616%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="select-route-line.html"><span class="token function">selectRouteLine</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1652088040%2FFunctions%2F1601889449" anchor-label="selectTheme" id="1652088040%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="select-theme.html"><span>select</span><wbr><span><span>Theme</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1652088040%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="select-theme.html"><span class="token function">selectTheme</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">styleMode<span class="token operator">: </span><a href="../../../../../navisdk/maps/com.inavi.maps/-map-style-mode-type/index.html">MapStyleModeType</a><span class="token punctuation">, </span></span><span class="parameter ">styleType<span class="token operator">: </span><a href="../../../../../navisdk/maps/com.inavi.maps/-map-style-type/index.html">MapStyleType</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1996836674%2FFunctions%2F1601889449" anchor-label="setAniCnt" id="1996836674%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-ani-cnt.html"><span>set</span><wbr><span>Ani</span><wbr><span><span>Cnt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1996836674%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-ani-cnt.html"><span class="token function">setAniCnt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1744897180%2FFunctions%2F1601889449" anchor-label="setCarClickListener" id="1744897180%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-car-click-listener.html"><span>set</span><wbr><span>Car</span><wbr><span>Click</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1744897180%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-car-click-listener.html"><span class="token function">setCarClickListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../../../../navisdk/maps/com.inavi.maps/-on-car-click-listener/index.html">OnCarClickListener</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2052500143%2FFunctions%2F1601889449" anchor-label="setCarPos" id="-2052500143%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-car-pos.html"><span>set</span><wbr><span>Car</span><wbr><span><span>Pos</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2052500143%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-car-pos.html"><span class="token function">setCarPos</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">longitude<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">latitude<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">angle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">var6<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">var7<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a><span class="token punctuation">, </span></span><span class="parameter ">var8<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a><span class="token punctuation">, </span></span><span class="parameter ">var9<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a><span class="token punctuation">, </span></span><span class="parameter ">var10<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/index.html">Short</a><span class="token punctuation">, </span></span><span class="parameter ">var11<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">var12<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">var13<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1995530516%2FFunctions%2F1601889449" anchor-label="setCarScale" id="-1995530516%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-car-scale.html"><span>set</span><wbr><span>Car</span><wbr><span><span>Scale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1995530516%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-car-scale.html"><span class="token function">setCarScale</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scale<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2016059681%2FFunctions%2F1601889449" anchor-label="setCompassButtonVisibile" id="2016059681%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-compass-button-visibile.html"><span>set</span><wbr><span>Compass</span><wbr><span>Button</span><wbr><span><span>Visibile</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2016059681%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-compass-button-visibile.html"><span class="token function">setCompassButtonVisibile</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">visible<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1544176396%2FFunctions%2F1601889449" anchor-label="setCTTWidth" id="1544176396%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-c-t-t-width.html"><span>set</span><wbr><span><span>CTTWidth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1544176396%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-c-t-t-width.html"><span class="token function">setCTTWidth</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-240950096%2FFunctions%2F1601889449" anchor-label="setDestroy" id="-240950096%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-destroy.html"><span>set</span><wbr><span><span>Destroy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-240950096%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-destroy.html"><span class="token function">setDestroy</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">destroyContext<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">rightNow<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-327794710%2FFunctions%2F1601889449" anchor-label="setDPI" id="-327794710%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-d-p-i.html"><span>set</span><wbr><span><span>DPI</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-327794710%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-d-p-i.html"><span class="token function">setDPI</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1093255952%2FFunctions%2F1601889449" anchor-label="setDriveRoute" id="1093255952%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-drive-route.html"><span>set</span><wbr><span>Drive</span><wbr><span><span>Route</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1093255952%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-drive-route.html"><span class="token function">setDriveRoute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-948025921%2FFunctions%2F1601889449" anchor-label="setFontScale" id="-948025921%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-font-scale.html"><span>set</span><wbr><span>Font</span><wbr><span><span>Scale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-948025921%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-font-scale.html"><span class="token function">setFontScale</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="965979358%2FFunctions%2F1601889449" anchor-label="setFPS" id="965979358%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-f-p-s.html"><span>set</span><wbr><span><span>FPS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="965979358%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-f-p-s.html"><span class="token function">setFPS</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fps<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="499109821%2FFunctions%2F1601889449" anchor-label="setGroupState" id="499109821%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-group-state.html"><span>set</span><wbr><span>Group</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="499109821%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-group-state.html"><span class="token function">setGroupState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="480841860%2FFunctions%2F1601889449" anchor-label="setLowDevice" id="480841860%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-low-device.html"><span>set</span><wbr><span>Low</span><wbr><span><span>Device</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="480841860%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-low-device.html"><span class="token function">setLowDevice</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1397838056%2FFunctions%2F1601889449" anchor-label="setMapAngle" id="-1397838056%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-map-angle.html"><span>set</span><wbr><span>Map</span><wbr><span><span>Angle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1397838056%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-map-angle.html"><span class="token function">setMapAngle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">angle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="548146556%2FFunctions%2F1601889449" anchor-label="setMapAngleChangeListener" id="548146556%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-map-angle-change-listener.html"><span>set</span><wbr><span>Map</span><wbr><span>Angle</span><wbr><span>Change</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="548146556%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-map-angle-change-listener.html"><span class="token function">setMapAngleChangeListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="../../../../../navisdk/maps/com.inavi.maps/-on-map-angle-change-listener/index.html">OnMapAngleChangeListener</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="142790745%2FFunctions%2F1601889449" anchor-label="setMapCenter" id="142790745%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-map-center.html"><span>set</span><wbr><span>Map</span><wbr><span><span>Center</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="142790745%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-map-center.html"><span class="token function">setMapCenter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">longitude<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">latitude<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">rotation<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">orbisTilt<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">orbisBearing<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">animated<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">delayMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="610414569%2FFunctions%2F1601889449" anchor-label="setMapCenterChangeListener" id="610414569%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-map-center-change-listener.html"><span>set</span><wbr><span>Map</span><wbr><span>Center</span><wbr><span>Change</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="610414569%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-map-center-change-listener.html"><span class="token function">setMapCenterChangeListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../../../../navisdk/maps/com.inavi.maps/-on-map-center-change-listener/index.html">OnMapCenterChangeListener</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2039168770%2FFunctions%2F1601889449" anchor-label="setMapLevel" id="2039168770%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-map-level.html"><span>set</span><wbr><span>Map</span><wbr><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2039168770%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-map-level.html"><span class="token function">setMapLevel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">zoom<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">duration<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1182145041%2FFunctions%2F1601889449" anchor-label="setMapMoveListener" id="1182145041%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-map-move-listener.html"><span>set</span><wbr><span>Map</span><wbr><span>Move</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1182145041%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-map-move-listener.html"><span class="token function">setMapMoveListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../../../../navisdk/maps/com.inavi.maps/-on-map-move-listener/index.html">OnMapMoveListener</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1435911559%2FFunctions%2F1601889449" anchor-label="setMapViewClickListener" id="1435911559%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-map-view-click-listener.html"><span>set</span><wbr><span>Map</span><wbr><span>View</span><wbr><span>Click</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1435911559%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-map-view-click-listener.html"><span class="token function">setMapViewClickListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../../../../navisdk/maps/com.inavi.maps/-on-map-view-click-listener/index.html">OnMapViewClickListener</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="878876039%2FFunctions%2F1601889449" anchor-label="setMapViewLongClickListener" id="878876039%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-map-view-long-click-listener.html"><span>set</span><wbr><span>Map</span><wbr><span>View</span><wbr><span>Long</span><wbr><span>Click</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="878876039%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-map-view-long-click-listener.html"><span class="token function">setMapViewLongClickListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../../../../navisdk/maps/com.inavi.maps/-on-map-view-long-click-listener/index.html">OnMapViewLongClickListener</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="75499847%2FFunctions%2F1601889449" anchor-label="setMapViewTfingerTtapListener" id="75499847%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-map-view-tfinger-ttap-listener.html"><span>set</span><wbr><span>Map</span><wbr><span>View</span><wbr><span>Tfinger</span><wbr><span>Ttap</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="75499847%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-map-view-tfinger-ttap-listener.html"><span class="token function">setMapViewTfingerTtapListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../../../../navisdk/maps/com.inavi.maps/-on-map-view-tfinger-ttap-listener/index.html">OnMapViewTfingerTtapListener</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1257390309%2FFunctions%2F1601889449" anchor-label="setMaxViewAngle" id="1257390309%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-max-view-angle.html"><span>set</span><wbr><span>Max</span><wbr><span>View</span><wbr><span><span>Angle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1257390309%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-max-view-angle.html"><span class="token function">setMaxViewAngle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1275696778%2FFunctions%2F1601889449" anchor-label="setPadding" id="-1275696778%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-padding.html"><span>set</span><wbr><span><span>Padding</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1275696778%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-padding.html"><span class="token function">setPadding</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bottom<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">top<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">left<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">right<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">inaviDuration<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2107989426%2FFunctions%2F1601889449" anchor-label="setPositionManager" id="2107989426%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-position-manager.html"><span>set</span><wbr><span>Position</span><wbr><span><span>Manager</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2107989426%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-position-manager.html"><span class="token function">setPositionManager</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">positionManager<span class="token operator">: </span><a href="../../../../../navisdk/mapmatch/com.inavisys.navisdk.mapmatch.location/-position-manager/index.html">PositionManager</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-779391179%2FFunctions%2F1601889449" anchor-label="setRouteColor" id="-779391179%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-route-color.html"><span>set</span><wbr><span>Route</span><wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-779391179%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-route-color.html"><span class="token function">setRouteColor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">routeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">normalColor<span class="token operator">: </span><span data-unresolved-link="dev.icerock.moko.resources/ColorResource///PointingToDeclaration/">ColorResource</span><span class="token punctuation">, </span></span><span class="parameter ">dimColor<span class="token operator">: </span><span data-unresolved-link="dev.icerock.moko.resources/ColorResource///PointingToDeclaration/">ColorResource</span></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-97314910%2FFunctions%2F1601889449" anchor-label="setRouteColorType" id="-97314910%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-route-color-type.html"><span>set</span><wbr><span>Route</span><wbr><span>Color</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-97314910%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-route-color-type.html"><span class="token function">setRouteColorType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">var2<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1071044417%2FFunctions%2F1601889449" anchor-label="setRouteTrafficColor" id="-1071044417%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-route-traffic-color.html"><span>set</span><wbr><span>Route</span><wbr><span>Traffic</span><wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1071044417%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-route-traffic-color.html"><span class="token function">setRouteTrafficColor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">routeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">trafficColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int-array/index.html">IntArray</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-518320108%2FFunctions%2F1601889449" anchor-label="setRouteTurnIndex" id="-518320108%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-route-turn-index.html"><span>set</span><wbr><span>Route</span><wbr><span>Turn</span><wbr><span><span>Index</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-518320108%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-route-turn-index.html"><span class="token function">setRouteTurnIndex</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">var2<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int-array/index.html">IntArray</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-564103732%2FFunctions%2F1601889449" anchor-label="setRouteWidthRatio" id="-564103732%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-route-width-ratio.html"><span>set</span><wbr><span>Route</span><wbr><span>Width</span><wbr><span><span>Ratio</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-564103732%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-route-width-ratio.html"><span class="token function">setRouteWidthRatio</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1352880692%2FFunctions%2F1601889449" anchor-label="setTrackingMode" id="-1352880692%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-tracking-mode.html"><span>set</span><wbr><span>Tracking</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1352880692%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-tracking-mode.html"><span class="token function">setTrackingMode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mode<span class="token operator">: </span><a href="../../../../../navisdk/maps/com.inavi.maps/-map-tracking-mode/index.html">MapTrackingMode</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1816745135%2FFunctions%2F1601889449" anchor-label="updateInstruction" id="1816745135%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-instruction.html"><span>update</span><wbr><span><span>Instruction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1816745135%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="update-instruction.html"><span class="token function">updateInstruction</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">instructions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../../../navisdk/model/com.inavisys.navisdk.model.engine.map/-map-route-options/-instruction/index.html">MapRouteOptions.Instruction</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1786675794%2FFunctions%2F1601889449" anchor-label="updateResource" id="1786675794%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-resource.html"><span>update</span><wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1786675794%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="update-resource.html"><span class="token function">updateResource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">var2<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span></span><span class="parameter ">var3<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">var4<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-587510779%2FFunctions%2F1601889449" anchor-label="updateRouteLine" id="-587510779%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-route-line.html"><span>update</span><wbr><span>Route</span><wbr><span><span>Line</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-587510779%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="update-route-line.html"><span class="token function">updateRouteLine</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">progress<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-452539741%2FFunctions%2F1601889449" anchor-label="viewAngle" id="-452539741%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="view-angle.html"><span>view</span><wbr><span><span>Angle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-452539741%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="view-angle.html"><span class="token function">viewAngle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">angle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2028430107%2FFunctions%2F1601889449" anchor-label="visibleCTT" id="2028430107%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="visible-c-t-t.html"><span>visible</span><wbr><span><span>CTT</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2028430107%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="visible-c-t-t.html"><span class="token function">visibleCTT</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">visible<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-770585931%2FFunctions%2F1601889449" anchor-label="visiblePOIDriveRoute" id="-770585931%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="visible-p-o-i-drive-route.html"><span>visible</span><wbr><span>POIDrive</span><wbr><span><span>Route</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-770585931%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="visible-p-o-i-drive-route.html"><span class="token function">visiblePOIDriveRoute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">var1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="415593485%2FFunctions%2F1601889449" anchor-label="zoomIn" id="415593485%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="zoom-in.html"><span>zoom</span><wbr><span><span>In</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="415593485%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="zoom-in.html"><span class="token function">zoomIn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">durationMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="925242294%2FFunctions%2F1601889449" anchor-label="zoomOut" id="925242294%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="zoom-out.html"><span>zoom</span><wbr><span><span>Out</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="925242294%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="zoom-out.html"><span class="token function">zoomOut</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">durationMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1764473931%2FFunctions%2F1601889449" anchor-label="zoomToFit" id="-1764473931%2FFunctions%2F1601889449" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="zoom-to-fit.html"><span>zoom</span><wbr><span>To</span><wbr><span><span>Fit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1764473931%2FFunctions%2F1601889449"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:inavi:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="zoom-to-fit.html"><span class="token function">zoomToFit</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">points<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../../../../navisdk/model/com.inavisys.navisdk.model.location/-my-point-d/index.html">MyPointD</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">duration<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">orbisPadding<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

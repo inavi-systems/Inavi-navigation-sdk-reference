@@ -1,4 +1,4 @@
-# Module navisdk-core
+# Module core
 NAVISDK는 KMP 기반의 내비게이션 SDK로, 초기화, 검색, 경로, 안내 등 다양한 기능을 제공합니다.
 
 # Package com.inavisys.navisdk.core
@@ -15,7 +15,7 @@ NAVISDK는 KMP 기반의 내비게이션 SDK로, 초기화, 검색, 경로, 안�
 # Package com.inavisys.navisdk.core.common
 ### Core.common 관련 내용들, 해당 문서에서 표출될 내용.
 
-# Module navisdk-maps
+# Module maps
 ### MAPS Package 관련 내용들  
 
 # Package com.inavi.maps

@@ -1,0 +1,724 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>jcSMR</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../../../index.html">
+                    INAVI Navigation SDK Documents
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">0.0.1
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":navisdk:core:dokkaHtmlPartial/androidMain">android</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":navisdk:core:dokkaHtmlPartial/androidMain" data-filter=":navisdk:core:dokkaHtmlPartial/androidMain">
+                                <span class="checkbox--icon"></span>
+                                android
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    INAVI Navigation SDK Documents
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="core::com.tw.smr/jcSMR///PointingToDeclaration//-753544276">
+  <div class="breadcrumbs"><a href="../../index.html">core</a><span class="delimiter">/</span><a href="../index.html">com.tw.smr</a><span class="delimiter">/</span><span class="current">jcSMR</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>jc</span><wbr><span><span>SMR</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">jcSMR</a></div></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1940810141%2FConstructors%2F-753544276" anchor-label="jcSMR" id="-1940810141%2FConstructors%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="jc-s-m-r.html"><span>jc</span><wbr><span><span>SMR</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1940810141%2FConstructors%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-143760406%2FFunctions%2F-753544276" anchor-label="close" id="-143760406%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="close.html"><span><span>close</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-143760406%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="close.html"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-448285408%2FFunctions%2F-753544276" anchor-label="closeCacheinfo" id="-448285408%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="close-cacheinfo.html"><span>close</span><wbr><span><span>Cacheinfo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-448285408%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="close-cacheinfo.html"><span class="token function">closeCacheinfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1026266181%2FFunctions%2F-753544276" anchor-label="closeManage" id="1026266181%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="close-manage.html"><span>close</span><wbr><span><span>Manage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1026266181%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="close-manage.html"><span class="token function">closeManage</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1283985649%2FFunctions%2F-753544276" anchor-label="closeMeshinfo" id="-1283985649%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="close-meshinfo.html"><span>close</span><wbr><span><span>Meshinfo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1283985649%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="close-meshinfo.html"><span class="token function">closeMeshinfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1325911857%2FFunctions%2F-753544276" anchor-label="createSmrMeshdata" id="-1325911857%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-smr-meshdata.html"><span>create</span><wbr><span>Smr</span><wbr><span><span>Meshdata</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1325911857%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="create-smr-meshdata.html"><span class="token function">createSmrMeshdata</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-26693139%2FFunctions%2F-753544276" anchor-label="delete" id="-26693139%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete.html"><span><span>delete</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-26693139%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="delete.html"><span class="token function">delete</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1244148647%2FFunctions%2F-753544276" anchor-label="end" id="1244148647%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="end.html"><span><span>end</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1244148647%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="end.html"><span class="token function">end</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-255044624%2FFunctions%2F-753544276" anchor-label="fileDelete" id="-255044624%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="file-delete.html"><span>file</span><wbr><span><span>Delete</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-255044624%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="file-delete.html"><span class="token function">fileDelete</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1919619078%2FFunctions%2F-753544276" anchor-label="fileExist" id="1919619078%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="file-exist.html"><span>file</span><wbr><span><span>Exist</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1919619078%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="file-exist.html"><span class="token function">fileExist</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1393820957%2FFunctions%2F-753544276" anchor-label="getNowFetchCount" id="-1393820957%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-now-fetch-count.html"><span>get</span><wbr><span>Now</span><wbr><span>Fetch</span><wbr><span><span>Count</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1393820957%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="get-now-fetch-count.html"><span class="token function">getNowFetchCount</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-352066690%2FFunctions%2F-753544276" anchor-label="getRealMesh" id="-352066690%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-real-mesh.html"><span>get</span><wbr><span>Real</span><wbr><span><span>Mesh</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-352066690%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="get-real-mesh.html"><span class="token function">getRealMesh</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">xpos<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">ypos<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-33341791%2FFunctions%2F-753544276" anchor-label="getSmapHeader" id="-33341791%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-smap-header.html"><span>get</span><wbr><span>Smap</span><wbr><span><span>Header</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-33341791%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="get-smap-header.html"><span class="token function">getSmapHeader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">info<span class="token operator">: </span><a href="../../../../navisdk/model/com.tw.smr/-smap-header/index.html">SmapHeader</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-788189279%2FFunctions%2F-753544276" anchor-label="getSrankManager" id="-788189279%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-srank-manager.html"><span>get</span><wbr><span>Srank</span><wbr><span><span>Manager</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-788189279%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="get-srank-manager.html"><span class="token function">getSrankManager</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">info<span class="token operator">: </span><a href="../../../../navisdk/model/com.tw.smr/-srank-manager/index.html">SrankManager</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="501719272%2FFunctions%2F-753544276" anchor-label="init" id="501719272%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="init.html"><span><span>init</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="501719272%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="init.html"><span class="token function">init</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-663006076%2FFunctions%2F-753544276" anchor-label="intFromJNI" id="-663006076%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="int-from-j-n-i.html"><span>int</span><wbr><span>From</span><wbr><span><span>JNI</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-663006076%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="int-from-j-n-i.html"><span class="token function">intFromJNI</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">arr<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int-array/index.html">IntArray</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2040770446%2FFunctions%2F-753544276" anchor-label="makeSmrCacheinfo" id="-2040770446%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="make-smr-cacheinfo.html"><span>make</span><wbr><span>Smr</span><wbr><span><span>Cacheinfo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2040770446%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="make-smr-cacheinfo.html"><span class="token function">makeSmrCacheinfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-953529884%2FFunctions%2F-753544276" anchor-label="mappingInit" id="-953529884%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mapping-init.html"><span>mapping</span><wbr><span><span>Init</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-953529884%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="mapping-init.html"><span class="token function">mappingInit</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="118281454%2FFunctions%2F-753544276" anchor-label="open" id="118281454%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="open.html"><span><span>open</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="118281454%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="open.html"><span class="token function">open</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1015142244%2FFunctions%2F-753544276" anchor-label="openCacheinfo" id="-1015142244%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="open-cacheinfo.html"><span>open</span><wbr><span><span>Cacheinfo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1015142244%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="open-cacheinfo.html"><span class="token function">openCacheinfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="302658121%2FFunctions%2F-753544276" anchor-label="openManage" id="302658121%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="open-manage.html"><span>open</span><wbr><span><span>Manage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="302658121%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="open-manage.html"><span class="token function">openManage</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-897145705%2FFunctions%2F-753544276" anchor-label="openMeshdata" id="-897145705%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="open-meshdata.html"><span>open</span><wbr><span><span>Meshdata</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-897145705%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="open-meshdata.html"><span class="token function">openMeshdata</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-886629357%2FFunctions%2F-753544276" anchor-label="openMeshinfo" id="-886629357%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="open-meshinfo.html"><span>open</span><wbr><span><span>Meshinfo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-886629357%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="open-meshinfo.html"><span class="token function">openMeshinfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1853923336%2FFunctions%2F-753544276" anchor-label="openSet" id="1853923336%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="open-set.html"><span>open</span><wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1853923336%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="open-set.html"><span class="token function">openSet</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">flag<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-446070650%2FFunctions%2F-753544276" anchor-label="readCacheinfo" id="-446070650%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-cacheinfo.html"><span>read</span><wbr><span><span>Cacheinfo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-446070650%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="read-cacheinfo.html"><span class="token function">readCacheinfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">flag<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1883141083%2FFunctions%2F-753544276" anchor-label="readSmrManage" id="1883141083%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-smr-manage.html"><span>read</span><wbr><span>Smr</span><wbr><span><span>Manage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1883141083%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="read-smr-manage.html"><span class="token function">readSmrManage</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1834041637%2FFunctions%2F-753544276" anchor-label="readSmrMeshinfo" id="1834041637%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-smr-meshinfo.html"><span>read</span><wbr><span>Smr</span><wbr><span><span>Meshinfo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1834041637%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="read-smr-meshinfo.html"><span class="token function">readSmrMeshinfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1713181213%2FFunctions%2F-753544276" anchor-label="ridxInit" id="1713181213%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ridx-init.html"><span>ridx</span><wbr><span><span>Init</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1713181213%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="ridx-init.html"><span class="token function">ridxInit</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1107436948%2FFunctions%2F-753544276" anchor-label="setDir" id="-1107436948%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-dir.html"><span>set</span><wbr><span><span>Dir</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1107436948%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="set-dir.html"><span class="token function">setDir</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1716030999%2FFunctions%2F-753544276" anchor-label="sidxMultiGet" id="-1716030999%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="sidx-multi-get.html"><span>sidx</span><wbr><span>Multi</span><wbr><span><span>Get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1716030999%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="sidx-multi-get.html"><span class="token function">sidxMultiGet</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">arr<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int-array/index.html">IntArray</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="62171328%2FFunctions%2F-753544276" anchor-label="start" id="62171328%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="start.html"><span><span>start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="62171328%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="start.html"><span class="token function">start</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="483921646%2FFunctions%2F-753544276" anchor-label="testReadNodeList" id="483921646%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="test-read-node-list.html"><span>test</span><wbr><span>Read</span><wbr><span>Node</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="483921646%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="test-read-node-list.html"><span class="token function">testReadNodeList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">map_id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1203079390%2FFunctions%2F-753544276" anchor-label="writeMeshdata" id="-1203079390%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write-meshdata.html"><span>write</span><wbr><span><span>Meshdata</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1203079390%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="write-meshdata.html"><span class="token function">writeMeshdata</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">arr1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">arr2<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int-array/index.html">IntArray</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">arr3<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int-array/index.html">IntArray</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">count<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1174337203%2FFunctions%2F-753544276" anchor-label="writeSmrManage" id="-1174337203%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write-smr-manage.html"><span>write</span><wbr><span>Smr</span><wbr><span><span>Manage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1174337203%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="write-smr-manage.html"><span class="token function">writeSmrManage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">arr<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1696849155%2FFunctions%2F-753544276" anchor-label="writeSmrMeshinfo" id="1696849155%2FFunctions%2F-753544276" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write-smr-meshinfo.html"><span>write</span><wbr><span>Smr</span><wbr><span><span>Meshinfo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1696849155%2FFunctions%2F-753544276"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:core:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="write-smr-meshinfo.html"><span class="token function">writeSmrMeshinfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">arr<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

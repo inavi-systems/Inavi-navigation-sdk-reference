@@ -1,0 +1,448 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>[ios]OrbisRouteAdapter</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../../../index.html">
+                    INAVI Navigation SDK Documents
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">0.0.1
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filter=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+                                <span class="checkbox--icon"></span>
+                                ios
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    INAVI Navigation SDK Documents
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="orbisroute::com.inavisys.navisdk.orbisroute/OrbisRouteAdapter///PointingToDeclaration//-1062297739">
+  <div class="breadcrumbs"><a href="../../index.html">orbisroute</a><span class="delimiter">/</span><a href="../index.html">com.inavisys.navisdk.orbisroute</a><span class="delimiter">/</span><span class="current">[ios]OrbisRouteAdapter</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Orbis</span><wbr><span>Route</span><wbr><span><span>Adapter</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">OrbisRouteAdapter</a> : <a href="../../../../navisdk/orbisroute/com.inavisys.navisdk.orbisroute/-orbis-route-i-f/index.html">OrbisRouteIF</a></div></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-537429851%2FFunctions%2F-1062297739" anchor-label="CalcTurnAngle" id="-537429851%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-calc-turn-angle.html"><span>Calc</span><wbr><span>Turn</span><wbr><span><span>Angle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-537429851%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-calc-turn-angle.html"><span class="token function">CalcTurnAngle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">frLinkIndex<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">toLinkIndex<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-648650431%2FFunctions%2F-1062297739" anchor-label="CleanOrbisNetwork" id="-648650431%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-clean-orbis-network.html"><span>Clean</span><wbr><span>Orbis</span><wbr><span><span>Network</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-648650431%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-clean-orbis-network.html"><span class="token function">CleanOrbisNetwork</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-935549564%2FFunctions%2F-1062297739" anchor-label="GetDataLink" id="-935549564%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-data-link.html"><span>Get</span><wbr><span>Data</span><wbr><span><span>Link</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-935549564%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-get-data-link.html"><span class="token function">GetDataLink</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">linkidindex<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../navisdk/model/com.inavi.orbisroute/-orbis-link/index.html">OrbisLink</a><span class="token operator">?</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1997037753%2FFunctions%2F-1062297739" anchor-label="GetDataLinkID" id="1997037753%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-data-link-i-d.html"><span>Get</span><wbr><span>Data</span><wbr><span>Link</span><wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1997037753%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-get-data-link-i-d.html"><span class="token function">GetDataLinkID</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">outMinMax<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long-array/index.html">LongArray</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="741654111%2FFunctions%2F-1062297739" anchor-label="GetDataLinkNearPt" id="741654111%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-data-link-near-pt.html"><span>Get</span><wbr><span>Data</span><wbr><span>Link</span><wbr><span>Near</span><wbr><span><span>Pt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="741654111%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-get-data-link-near-pt.html"><span class="token function">GetDataLinkNearPt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dx<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">dy<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">min_dist<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double-array/index.html">DoubleArray</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../navisdk/model/com.inavi.orbisroute/-orbis-link/index.html">OrbisLink</a><span class="token operator">?</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1606668570%2FFunctions%2F-1062297739" anchor-label="GetDataLinkRect" id="-1606668570%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-data-link-rect.html"><span>Get</span><wbr><span>Data</span><wbr><span>Link</span><wbr><span><span>Rect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1606668570%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-get-data-link-rect.html"><span class="token function">GetDataLinkRect</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">rect<span class="token operator">: </span><a href="../../../../navisdk/model/com.inavi.orbisroute/-rect_m/index.html">Rect_m</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../../navisdk/model/com.inavi.orbisroute/-orbis-link/index.html">OrbisLink</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-380289140%2FFunctions%2F-1062297739" anchor-label="GetDataNode" id="-380289140%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-data-node.html"><span>Get</span><wbr><span>Data</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-380289140%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-get-data-node.html"><span class="token function">GetDataNode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nodeidindex<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../navisdk/model/com.inavi.orbisroute/-orbis-node/index.html">OrbisNode</a><span class="token operator">?</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-854953279%2FFunctions%2F-1062297739" anchor-label="GetDataNodeID" id="-854953279%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-data-node-i-d.html"><span>Get</span><wbr><span>Data</span><wbr><span>Node</span><wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-854953279%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-get-data-node-i-d.html"><span class="token function">GetDataNodeID</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">outMinMax<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long-array/index.html">LongArray</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-168276377%2FFunctions%2F-1062297739" anchor-label="GetDataNodeNearPt" id="-168276377%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-data-node-near-pt.html"><span>Get</span><wbr><span>Data</span><wbr><span>Node</span><wbr><span>Near</span><wbr><span><span>Pt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-168276377%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-get-data-node-near-pt.html"><span class="token function">GetDataNodeNearPt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dx<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">dy<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">min_dist<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double-array/index.html">DoubleArray</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../navisdk/model/com.inavi.orbisroute/-orbis-node/index.html">OrbisNode</a><span class="token operator">?</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1150659038%2FFunctions%2F-1062297739" anchor-label="GetDataNodeRect" id="1150659038%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-data-node-rect.html"><span>Get</span><wbr><span>Data</span><wbr><span>Node</span><wbr><span><span>Rect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1150659038%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-get-data-node-rect.html"><span class="token function">GetDataNodeRect</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">rect<span class="token operator">: </span><a href="../../../../navisdk/model/com.inavi.orbisroute/-rect_m/index.html">Rect_m</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../../navisdk/model/com.inavi.orbisroute/-orbis-node/index.html">OrbisNode</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1748221973%2FFunctions%2F-1062297739" anchor-label="GetExtentLink" id="1748221973%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-extent-link.html"><span>Get</span><wbr><span>Extent</span><wbr><span><span>Link</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1748221973%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-get-extent-link.html"><span class="token function">GetExtentLink</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../navisdk/model/com.inavi.orbisroute/-rect_m/index.html">Rect_m</a><span class="token operator">?</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="393681677%2FFunctions%2F-1062297739" anchor-label="GetExtentNode" id="393681677%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-extent-node.html"><span>Get</span><wbr><span>Extent</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="393681677%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-get-extent-node.html"><span class="token function">GetExtentNode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../navisdk/model/com.inavi.orbisroute/-rect_m/index.html">Rect_m</a><span class="token operator">?</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1417953299%2FFunctions%2F-1062297739" anchor-label="GetListTurnInfoFrom" id="1417953299%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-list-turn-info-from.html"><span>Get</span><wbr><span>List</span><wbr><span>Turn</span><wbr><span>Info</span><wbr><span><span>From</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1417953299%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-get-list-turn-info-from.html"><span class="token function">GetListTurnInfoFrom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">linkidFrom<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long-array/index.html">LongArray</a><span class="token operator">?</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-669449820%2FFunctions%2F-1062297739" anchor-label="GetListTurnInfoTo" id="-669449820%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-list-turn-info-to.html"><span>Get</span><wbr><span>List</span><wbr><span>Turn</span><wbr><span>Info</span><wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-669449820%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-get-list-turn-info-to.html"><span class="token function">GetListTurnInfoTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">linkidTo<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long-array/index.html">LongArray</a><span class="token operator">?</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-76748419%2FFunctions%2F-1062297739" anchor-label="GetMapVersion" id="-76748419%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-map-version.html"><span>Get</span><wbr><span>Map</span><wbr><span><span>Version</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-76748419%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-get-map-version.html"><span class="token function">GetMapVersion</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1835400178%2FFunctions%2F-1062297739" anchor-label="GetRoadNameByLinkIndex" id="-1835400178%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-road-name-by-link-index.html"><span>Get</span><wbr><span>Road</span><wbr><span>Name</span><wbr><span>By</span><wbr><span>Link</span><wbr><span><span>Index</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1835400178%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-get-road-name-by-link-index.html"><span class="token function">GetRoadNameByLinkIndex</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">linkidindex<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="671127343%2FFunctions%2F-1062297739" anchor-label="GetRoadNameByNameID" id="671127343%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-road-name-by-name-i-d.html"><span>Get</span><wbr><span>Road</span><wbr><span>Name</span><wbr><span>By</span><wbr><span>Name</span><wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="671127343%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-get-road-name-by-name-i-d.html"><span class="token function">GetRoadNameByNameID</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nameid<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-352348931%2FFunctions%2F-1062297739" anchor-label="isTurnInfo" id="-352348931%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-turn-info.html"><span>is</span><wbr><span>Turn</span><wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-352348931%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="is-turn-info.html"><span class="token function">isTurnInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">linkidTo<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">linkidFrom<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1084559269%2FFunctions%2F-1062297739" anchor-label="OpenOrbisNetwork" id="-1084559269%2FFunctions%2F-1062297739" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-open-orbis-network.html"><span>Open</span><wbr><span>Orbis</span><wbr><span><span>Network</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1084559269%2FFunctions%2F-1062297739"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:orbisroute:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":navisdk:orbisroute:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:orbisroute:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-open-orbis-network.html"><span class="token function">OpenOrbisNetwork</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dirname<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

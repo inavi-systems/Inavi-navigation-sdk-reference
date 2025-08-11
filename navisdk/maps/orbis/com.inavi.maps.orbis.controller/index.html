@@ -1,0 +1,436 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>com.inavi.maps.orbis.controller</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../../../index.html">
+                    INAVI Navigation SDK Documents
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">0.0.1
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">android</button>
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain">common</button>
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain">ios</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filter=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">
+                                <span class="checkbox--icon"></span>
+                                android
+                            </label>
+                        </li>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-filter=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain">
+                                <span class="checkbox--icon"></span>
+                                common
+                            </label>
+                        </li>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-filter=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain">
+                                <span class="checkbox--icon"></span>
+                                ios
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    INAVI Navigation SDK Documents
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="maps:orbis::com.inavi.maps.orbis.controller////PointingToDeclaration//586436347">
+  <div class="breadcrumbs"><a href="../index.html">maps:orbis</a><span class="delimiter">/</span><span class="current">com.inavi.maps.orbis.controller</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-556728828%2FClasslikes%2F1481120243" anchor-label="AndroidCameraController" id="-556728828%2FClasslikes%2F1481120243" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-android-camera-controller/index.html"><span>Android</span><wbr><span>Camera</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-556728828%2FClasslikes%2F1481120243"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-android-camera-controller/index.html">AndroidCameraController</a> : <a href="-camera-controller/index.html">CameraController</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1820047048%2FClasslikes%2F1481120243" anchor-label="AndroidGestureController" id="-1820047048%2FClasslikes%2F1481120243" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-android-gesture-controller/index.html"><span>Android</span><wbr><span>Gesture</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1820047048%2FClasslikes%2F1481120243"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-android-gesture-controller/index.html">AndroidGestureController</a> : <a href="../../../../navisdk/maps/com.inavi.maps/-map-component/index.html">MapComponent</a>, <a href="-gesture-controller/index.html">GestureController</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="170152564%2FClasslikes%2F1481120243" anchor-label="AndroidLocationController" id="170152564%2FClasslikes%2F1481120243" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-android-location-controller/index.html"><span>Android</span><wbr><span>Location</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="170152564%2FClasslikes%2F1481120243"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-android-location-controller/index.html">AndroidLocationController</a> : <a href="../../../../navisdk/maps/com.inavi.maps/-map-component/index.html">MapComponent</a>, <a href="-location-controller/index.html">LocationController</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1253321935%2FClasslikes%2F1481120243" anchor-label="AndroidMarkerController" id="1253321935%2FClasslikes%2F1481120243" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-android-marker-controller/index.html"><span>Android</span><wbr><span>Marker</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1253321935%2FClasslikes%2F1481120243"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-android-marker-controller/index.html">AndroidMarkerController</a> : <a href="-marker-controller/index.html">MarkerController</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1571147976%2FClasslikes%2F1481120243" anchor-label="AndroidRouteController" id="-1571147976%2FClasslikes%2F1481120243" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-android-route-controller/index.html"><span>Android</span><wbr><span>Route</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1571147976%2FClasslikes%2F1481120243"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-android-route-controller/index.html">AndroidRouteController</a> : <a href="-route-controller/index.html">RouteController</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1405813333%2FClasslikes%2F1481120243" anchor-label="AndroidUIController" id="1405813333%2FClasslikes%2F1481120243" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-android-u-i-controller/index.html"><span>Android</span><wbr><span><span>UIController</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1405813333%2FClasslikes%2F1481120243"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-android-u-i-controller/index.html">AndroidUIController</a> : <a href="-u-i-controller/index.html">UIController</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="575654669%2FClasslikes%2F-1671738617" anchor-label="CameraController" id="575654669%2FClasslikes%2F-1671738617" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-camera-controller/index.html"><span>Camera</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="575654669%2FClasslikes%2F-1671738617"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-camera-controller/index.html">CameraController</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1075897009%2FClasslikes%2F-1671738617" anchor-label="GestureController" id="-1075897009%2FClasslikes%2F-1671738617" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-gesture-controller/index.html"><span>Gesture</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1075897009%2FClasslikes%2F-1671738617"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-gesture-controller/index.html">GestureController</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1763967293%2FClasslikes%2F-1671738617" anchor-label="LocationController" id="1763967293%2FClasslikes%2F-1671738617" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-location-controller/index.html"><span>Location</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1763967293%2FClasslikes%2F-1671738617"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-location-controller/index.html">LocationController</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1909261864%2FClasslikes%2F-1671738617" anchor-label="MarkerController" id="-1909261864%2FClasslikes%2F-1671738617" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-marker-controller/index.html"><span>Marker</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1909261864%2FClasslikes%2F-1671738617"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-marker-controller/index.html">MarkerController</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1790516495%2FClasslikes%2F-1671738617" anchor-label="RouteController" id="1790516495%2FClasslikes%2F-1671738617" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-controller/index.html"><span>Route</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1790516495%2FClasslikes%2F-1671738617"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-route-controller/index.html">RouteController</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1664893986%2FClasslikes%2F-1671738617" anchor-label="UIController" id="-1664893986%2FClasslikes%2F-1671738617" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-u-i-controller/index.html"><span><span>UIController</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1664893986%2FClasslikes%2F-1671738617"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-u-i-controller/index.html">UIController</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1331007182%2FFunctions%2F586436347" anchor-label="getCameraController" id="-1331007182%2FFunctions%2F586436347" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-camera-controller.html"><span>get</span><wbr><span>Camera</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1331007182%2FFunctions%2F586436347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">android</button><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="get-camera-controller.html"><span class="token function">getCameraController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-camera-controller/index.html">CameraController</a></div></div><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">fun </span><a href="get-camera-controller.html"><span class="token function">getCameraController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-camera-controller/index.html">CameraController</a></div></div><div class="content sourceset-dependent-content" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="get-camera-controller.html"><span class="token function">getCameraController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../navisdk/maps/orbis/com.inavi.maps.orbis.controller/-camera-controller/index.html">CameraController</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1594500450%2FFunctions%2F586436347" anchor-label="getGestureController" id="1594500450%2FFunctions%2F586436347" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-gesture-controller.html"><span>get</span><wbr><span>Gesture</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1594500450%2FFunctions%2F586436347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">android</button><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="get-gesture-controller.html"><span class="token function">getGestureController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-gesture-controller/index.html">GestureController</a></div></div><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">fun </span><a href="get-gesture-controller.html"><span class="token function">getGestureController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-gesture-controller/index.html">GestureController</a></div></div><div class="content sourceset-dependent-content" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="get-gesture-controller.html"><span class="token function">getGestureController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../navisdk/maps/orbis/com.inavi.maps.orbis.controller/-gesture-controller/index.html">GestureController</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="294315298%2FFunctions%2F586436347" anchor-label="getLocationController" id="294315298%2FFunctions%2F586436347" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-location-controller.html"><span>get</span><wbr><span>Location</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="294315298%2FFunctions%2F586436347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">android</button><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="get-location-controller.html"><span class="token function">getLocationController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-location-controller/index.html">LocationController</a></div></div><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">fun </span><a href="get-location-controller.html"><span class="token function">getLocationController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-location-controller/index.html">LocationController</a></div></div><div class="content sourceset-dependent-content" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="get-location-controller.html"><span class="token function">getLocationController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../navisdk/maps/orbis/com.inavi.maps.orbis.controller/-location-controller/index.html">LocationController</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="479043581%2FFunctions%2F586436347" anchor-label="getMarkerController" id="479043581%2FFunctions%2F586436347" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-marker-controller.html"><span>get</span><wbr><span>Marker</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="479043581%2FFunctions%2F586436347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">android</button><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="get-marker-controller.html"><span class="token function">getMarkerController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-marker-controller/index.html">MarkerController</a></div></div><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">fun </span><a href="get-marker-controller.html"><span class="token function">getMarkerController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-marker-controller/index.html">MarkerController</a></div></div><div class="content sourceset-dependent-content" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="get-marker-controller.html"><span class="token function">getMarkerController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../navisdk/maps/orbis/com.inavi.maps.orbis.controller/-marker-controller/index.html">MarkerController</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="290396898%2FFunctions%2F586436347" anchor-label="getRouteController" id="290396898%2FFunctions%2F586436347" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-route-controller.html"><span>get</span><wbr><span>Route</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="290396898%2FFunctions%2F586436347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">android</button><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="get-route-controller.html"><span class="token function">getRouteController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-route-controller/index.html">RouteController</a></div></div><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">fun </span><a href="get-route-controller.html"><span class="token function">getRouteController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-route-controller/index.html">RouteController</a></div></div><div class="content sourceset-dependent-content" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="get-route-controller.html"><span class="token function">getRouteController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../navisdk/maps/orbis/com.inavi.maps.orbis.controller/-route-controller/index.html">RouteController</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1404266877%2FFunctions%2F586436347" anchor-label="getUIController" id="-1404266877%2FFunctions%2F586436347" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain,:navisdk:maps:orbis:dokkaHtmlPartial/androidMain,:navisdk:maps:orbis:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-u-i-controller.html"><span>get</span><wbr><span><span>UIController</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1404266877%2FFunctions%2F586436347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain">android</button><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-filterable-set=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain" data-toggle=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="get-u-i-controller.html"><span class="token function">getUIController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-u-i-controller/index.html">UIController</a></div></div><div class="content sourceset-dependent-content" data-active="" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">fun </span><a href="get-u-i-controller.html"><span class="token function">getUIController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-u-i-controller/index.html">UIController</a></div></div><div class="content sourceset-dependent-content" data-togglable=":navisdk:maps:orbis:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">fun </span><a href="get-u-i-controller.html"><span class="token function">getUIController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../navisdk/maps/orbis/com.inavi.maps.orbis.controller/-u-i-controller/index.html">UIController</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

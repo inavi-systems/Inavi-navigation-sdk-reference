@@ -90,8 +90,6 @@ com.tw.smr
 module:orbisroute
 com.inavi.orbisroute
 com.inavisys.navisdk.orbisroute
-module:tts
-com.inavisys.navisdk.tts
 module:utils
 com.inavisys.navisdk.utils
 com.inavisys.navisdk.utils.database

@@ -20,6 +20,14 @@ $dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetRoadNameByL
 $dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/GetRoadNameByNameID/#kotlin.Int/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-get-road-name-by-name-i-d.html
 $dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/OpenOrbisNetwork/#kotlin.String?/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/-open-orbis-network.html
 $dokka.location:com.inavisys.navisdk.orbisroute/OrbisRouteAdapter/isTurnInfo/#kotlin.Long#kotlin.Long/PointingToDeclaration/orbisroute/com.inavisys.navisdk.orbisroute/[ios]-orbis-route-adapter/is-turn-info.html
+module:navisdk-aos-ui
+com.inavisys.navisdk.ui
+com.inavisys.navisdk.ui.activities
+com.inavisys.navisdk.ui.adapter
+com.inavisys.navisdk.ui.component
+com.inavisys.navisdk.ui.fragments
+com.inavisys.navisdk.ui.map
+com.inavisys.navisdk.ui.util
 module:core
 com.inavisys.navibank
 com.inavisys.navisdk.core

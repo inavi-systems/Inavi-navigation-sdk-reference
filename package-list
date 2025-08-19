@@ -16,12 +16,6 @@ com.inavisys.navisdk.core.common
 com.inavisys.navisdk.core.config.platform
 com.inavisys.navisdk.core.config.usecase
 com.inavisys.navisdk.core.controller
-com.inavisys.navisdk.core.engine.admin
-com.inavisys.navisdk.core.engine.dp
-com.inavisys.navisdk.core.engine.dp.entity
-com.inavisys.navisdk.core.engine.dp.usecase
-com.inavisys.navisdk.core.engine.navibank
-com.inavisys.navisdk.core.engine.smr
 com.inavisys.navisdk.core.manager.route
 com.inavisys.navisdk.core.manager.route.listener
 com.inavisys.navisdk.core.manager.route.service

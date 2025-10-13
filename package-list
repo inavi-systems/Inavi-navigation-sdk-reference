@@ -9,6 +9,7 @@ module:maps
 com.inavi.maps
 module:model
 com.inavisys.navisdk.model.engine.map
+com.inavisys.navisdk.model.search
 com.inavisys.navisdk.model.ui
 module:maps:orbis
 com.inavi.maps.orbis

@@ -1,15 +1,22 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
-
+$dokka.location:com.inavi.maps.orbis/InvMapFragment///PointingToDeclaration/maps/com.inavi.maps.orbis/[ios]-inv-map-fragment/index.html
+$dokka.location:com.inavi.maps.orbis/InvMapFragment/InvMapFragment/#/PointingToDeclaration/maps/com.inavi.maps.orbis/[android]-inv-map-fragment/-inv-map-fragment.html
+$dokka.location:com.inavi.maps.orbis/InvMapFragment/InvMapFragment/#kotlinx.cinterop.CValue[platform.CoreGraphics.CGRect]/PointingToDeclaration/maps/com.inavi.maps.orbis/[ios]-inv-map-fragment/-inv-map-fragment.html
+$dokka.location:com.inavi.maps.orbis/InvMapFragment/changeMapStyle/#kotlin.String/PointingToDeclaration/maps/com.inavi.maps.orbis/[ios]-inv-map-fragment/change-map-style.html
+$dokka.location:com.inavi.maps.orbis/InvMapFragment/getMapAsync/#kotlin.Function1[com.inavi.maps.orbis.display.InvMapController,kotlin.Unit]/PointingToDeclaration/maps/com.inavi.maps.orbis/[ios]-inv-map-fragment/get-map-async.html
+$dokka.location:com.inavi.maps.orbis/InvMapFragment/view/#/PointingToDeclaration/maps/com.inavi.maps.orbis/[ios]-inv-map-fragment/view.html
 module:ui
 com.inavisys.navisdk.ui
 module:core
 com.inavisys.navisdk.core
+com.inavisys.navisdk.core.controller
 module:maps
 com.inavi.maps
+com.inavi.maps.orbis
 module:model
+com.inavisys.navisdk.model.engine.guidance
 com.inavisys.navisdk.model.engine.map
 com.inavisys.navisdk.model.search
 com.inavisys.navisdk.model.ui
-module:maps:orbis
-com.inavi.maps.orbis
+nl.adaptivity.xmlutil.serialization

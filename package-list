@@ -8,6 +8,8 @@ $dokka.location:com.inavi.maps.orbis/InvMapFragment/getMapAsync/#kotlin.Function
 $dokka.location:com.inavi.maps.orbis/InvMapFragment/view/#/PointingToDeclaration/maps/com.inavi.maps.orbis/[ios]-inv-map-fragment/view.html
 module:ui
 com.inavisys.navisdk.ui
+com.inavisys.navisdk.ui.activities
+com.inavisys.navisdk.ui.component
 module:core
 com.inavisys.navisdk.core
 com.inavisys.navisdk.core.controller
